@@ -13,12 +13,14 @@ html {
 body {
 }
 
-body h2{
+body h2 {
   font-size: 3rem4;
 }
 
 header {
   padding-top: 25px;
+  justify-content: space-between;
+  display: flex;
 }
 
 .home-hero {
@@ -83,7 +85,7 @@ button:hover {
 }
 
 .intro-welcome {
-  text-align: center;  
+  text-align: center;
 }
 
 .intro-welcome h2 {
@@ -123,7 +125,7 @@ a {
 }
 .missing-header {
   padding-top: 40px;
-  text-align: center;  
+  text-align: center;
 }
 .missing-header h2 {
   font-size: 3vw;
@@ -150,4 +152,51 @@ a {
   border-radius: 10px;
   padding-left: 2em;
   padding-right: 2em;
+}
+
+.directions {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.directions h4 {
+  color: #0270bf;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+.directions-book-now {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.directions-book-now button {
+  font-size: 24px;
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+}
+
+footer {
+  background-color: #092d5b;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+footer a {
+  color: #85a9c3;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+.follow-us {
+  color: #85a9c3;
 }
