@@ -39,6 +39,13 @@ header {
   padding-top: 25px;
 }
 
+.text-logo {
+  font-family: "lora", sans-serif;
+  font-size: 6vw;
+  color: #092d5b;
+  padding-top: 10px;
+}
+
 .crest-logo img {
   width: 15%;
 }
@@ -68,6 +75,8 @@ button {
 
 button a {
   color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 button a:hover {
