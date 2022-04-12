@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+
+header {
+  padding-top: 25px;
+}
+
+.home-hero {
+  background-image: url("/rio-colorado-golf/public/assets/img/riocolo-cup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  /* /* width: 100vw; */
+  height: 100vh;
+  text-align: center;
+}
+
+.text-logo img {
+  width: 25%;
+  padding-top: 25px;
+}
+
+.crest-logo img {
+  width: 15%;
+}
+
+nav {
+}
+
+nav a {
+  color: #0270bf;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+button {
+  background-color: #0270bf;
+  border: 0;
+  border-radius: 5px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+button a {
+  color: white;
+}
+
+button a:hover {
+  color: white;
+}
+
+button:hover {
+  color: white;
+  background-color: #092d5b;
+}
+
+.intro-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.intro-welcome {
+  margin: 40px;
+  text-align: center;
+  letter-spacing: 10px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+}
+
+.intro-welcome h2 {
+  font-size: 55px;
+  text-shadow: 2px 2px 4px #afafaf;
+}
+
+.intro-text {
+  letter-spacing: 1px;
+  color: #555555;
+}
+
+.intro-book-now {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.intro-book-now button {
+  font-size: 24px;
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+a {
+  text-decoration: none;
+}
