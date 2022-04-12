@@ -1,20 +1,15 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-html {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+  font-family: "Poppins", sans-serif;
 }
 
 body h2 {
-  font-size: 3rem4;
+  font-size: 3rem;
 }
 
 header {
@@ -200,3 +195,10 @@ footer a:hover {
 .follow-us {
   color: #85a9c3;
 }
+
+.social-icon{
+  color: white;
+  font-size: 2vw;
+  padding-left: 5px;
+}
+
