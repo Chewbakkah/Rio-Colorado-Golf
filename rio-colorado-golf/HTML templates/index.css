@@ -13,22 +13,27 @@ html {
 body {
 }
 
+body h2{
+  font-size: 3rem4;
+}
+
 header {
   padding-top: 25px;
 }
 
 .home-hero {
-  background-image: url("/rio-colorado-golf/public/assets/img/riocolo-cup.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: center;
+  /* background-image: url("/rio-colorado-golf/public/assets/img/riocolo-cup.jpg"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: center; */
   /* /* width: 100vw; */
-  height: 100vh;
+  /* height: 100vh; */
   text-align: center;
+  background: linear-gradient(to top, #ffffff, #c8dbfb);
 }
 
 .text-logo img {
-  width: 25%;
+  width: 35%;
   padding-top: 25px;
 }
 
@@ -78,26 +83,27 @@ button:hover {
 }
 
 .intro-welcome {
-  margin: 40px;
-  text-align: center;
-  letter-spacing: 10px;
-  color: #0270bf;
-  border-bottom: 1px solid #afafaf;
+  text-align: center;  
 }
 
 .intro-welcome h2 {
-  font-size: 55px;
+  font-size: 4vw;
   text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
 }
 
 .intro-text {
+  padding-top: 40px;
   letter-spacing: 1px;
   color: #555555;
 }
 
 .intro-book-now {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -110,4 +116,38 @@ button:hover {
 
 a {
   text-decoration: none;
+}
+.missing-container {
+  width: 75%;
+  margin: 0 auto;
+}
+.missing-header {
+  padding-top: 40px;
+  text-align: center;  
+}
+.missing-header h2 {
+  font-size: 3vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+}
+.missing-text {
+  padding-top: 40px;
+  letter-spacing: 1px;
+  color: #555555;
+}
+.missing-amenities {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.missing-img {
+  text-align: center;
+}
+.missing-amenities button {
+  font-size: 24px;
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
 }
