@@ -83,6 +83,10 @@ button:hover {
   background-color: #092d5b;
 }
 
+.btn-shadow {
+  box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.4);
+}
+
 .intro-container {
   width: 75%;
   margin: 0 auto;
