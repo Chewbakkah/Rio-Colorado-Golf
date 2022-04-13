@@ -28,6 +28,9 @@ header {
   text-align: center;
   background: linear-gradient(to top, #ffffff, #c8dbfb);
 }
+.home-hero img {
+  width: 50%;
+}
 
 .text-logo img {
   width: 35%;
@@ -154,7 +157,7 @@ a {
   padding-bottom: 40px;
   text-align: center;
 }
-.missing-img {
+.missing-img, .amenities-img {
   text-align: center;
 }
 .missing-amenities button {
@@ -222,4 +225,54 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.onsite-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.onsite-header {
+  text-align: center;
+}
+
+.onsite-header h2 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
+}
+
+.onsite-text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  color: #555555;
+}
+
+.offsite-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.offsite-header {
+  text-align: center;
+}
+
+.offsite-header h2 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
+}
+
+.offsite-text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  color: #555555;
 }
