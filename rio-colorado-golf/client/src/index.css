@@ -20,38 +20,44 @@ body h2 {
 }
 
 header {
-  background-color: rgba(200, 219, 251, 1);
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* background-color: rgba(200, 219, 251, 1); */
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
   justify-content: space-between;
   display: flex;
   position: sticky;
   top: 0;
   z-index: 9999;
-  box-shadow: 0 0 20px rgba(200, 219, 251, 1);
+  border-bottom: 1px solid #afafaf;
 }
 
 .home-hero {
-  /* background-image: url("/rio-colorado-golf/public/assets/img/riocolo-cup.jpg"); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* background-position-x: center; */
-  /* /* width: 100vw; */
-  /* height: 100vh; */
   text-align: center;
   background: linear-gradient(to top, #ffffff, #c8dbfb);
+  position: sticky;
+  z-index: -50;
+  top: 1vh;
 }
 
 .text-logo img {
   width: 35%;
-  padding-top: 25px;
+  position: absolute;
+}
+
+.header-img {
+  width: 25%;
+}
+
+.home-hero img {
+  width: 25%;
 }
 
 .text-logo {
   font-family: "lora", sans-serif;
   font-size: 6vw;
   color: #092d5b;
-  padding-top: 10px;
+  padding-top: 60px;
 }
 
 .crest-logo img {
@@ -64,6 +70,7 @@ nav {
 nav a {
   color: #0270bf;
   font-weight: 600;
+  font-size: 1.3vw;
   letter-spacing: 1.5px;
 }
 
@@ -103,6 +110,8 @@ button:hover {
 .intro-container {
   width: 75%;
   margin: 0 auto;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
 }
 
 .intro-welcome {
@@ -143,9 +152,11 @@ a {
 .missing-container {
   width: 75%;
   margin: 0 auto;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
 }
 .missing-header {
-  padding-top: 40px;
+  padding-top: 20px;
   text-align: center;
 }
 .missing-header h2 {
@@ -165,7 +176,8 @@ a {
   padding-bottom: 40px;
   text-align: center;
 }
-.missing-img {
+.missing-img,
+.amenities-img {
   text-align: center;
 }
 .missing-amenities button {
@@ -224,6 +236,7 @@ body {
 
 footer a {
   color: #85a9c3;
+  font-size: 1.3vw;
 }
 
 footer a:hover {
@@ -245,4 +258,54 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.onsite-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.onsite-header {
+  text-align: center;
+}
+
+.onsite-header h2 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
+}
+
+.onsite-text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  color: #555555;
+}
+
+.offsite-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.offsite-header {
+  text-align: center;
+}
+
+.offsite-header h2 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
+}
+
+.offsite-text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  color: #555555;
 }

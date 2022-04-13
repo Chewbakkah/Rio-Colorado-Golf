@@ -1,6 +1,7 @@
 import React from "react";
 import crestLogo from "../../src/assets/img/riocolo-logo.png";
 import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
+import holeImageGrad from "../../src/assets/img/riocolo-wht-gradient.png";
 import greenImage from "../../src/assets/img/riocolo-green.jpg";
 import Directions from "../components/Directions";
 import Footer from "../components/Footer";
@@ -15,7 +16,7 @@ const Home = () => {
             <img src={crestLogo} alt="Rio Colorado Logo" />
           </div>
         </section>
-
+        <img class="img-fluid w-100" src={holeImageGrad} />
         <img class="img-fluid w-100 img-shadow" src={holeImage} />
         <section class="intro-container">
           <div class="intro-welcome">
@@ -56,7 +57,7 @@ const Home = () => {
           </div>
           <div class="missing-amenities">
             <button class="btn-shadow">
-              <a href="">AMENITIES</a>
+              <a href="/amenities">AMENITIES</a>
             </button>
           </div>
         </section>
@@ -101,6 +102,7 @@ const Home = () => {
           </div>
         </footer> */}
       </section>
+      <Directions />
     </main>
   );
 };
