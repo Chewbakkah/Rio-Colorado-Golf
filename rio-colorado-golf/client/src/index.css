@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+main {
+  min-height: 100vh;
+  background: white;
+  position: relative;
+  z-index: 1;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -197,6 +204,11 @@ footer {
   background-color: #092d5b;
   padding-top: 40px;
   padding-bottom: 40px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
 }
 
 footer a {
