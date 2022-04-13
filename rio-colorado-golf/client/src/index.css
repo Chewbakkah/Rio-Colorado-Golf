@@ -13,7 +13,9 @@ body h2 {
 }
 
 header {
+  background-color: #c8dbfb;
   padding-top: 25px;
+  padding-bottom: 25px;
   justify-content: space-between;
   display: flex;
 }

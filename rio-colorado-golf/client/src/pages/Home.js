@@ -1,5 +1,7 @@
 import React from "react";
-// import images from "../../public/assets/img/";
+import crestLogo from "../../src/assets/img/riocolo-logo.png";
+import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
+import greenImage from "../../src/assets/img/riocolo-green.jpg";
 
 const Home = () => {
   return (
@@ -7,14 +9,11 @@ const Home = () => {
       <section class="home-hero">
         <div class="text-logo">Rio Colorado</div>
         <div class="crest-logo">
-          <img src="{crestLogo}" alt="Rio Colorado Logo" />
+          <img src={crestLogo} alt="Rio Colorado Logo" />
         </div>
       </section>
 
-      <img
-        class="img-fluid w-100 img-shadow"
-        src="/rio-colorado-golf/public/assets/img/riocolo-cup-slice.jpg"
-      />
+      <img class="img-fluid w-100 img-shadow" src={holeImage} />
       <section class="intro-container">
         <div class="intro-welcome">
           <h2>WELCOME TO RIO COLORADO</h2>
@@ -38,10 +37,7 @@ const Home = () => {
         </div>
       </section>
       <div class="missing-img">
-        <img
-          class="img-fluid w-100"
-          src="/rio-colorado-golf/public/assets/img/riocolo-green.jpg"
-        />
+        <img class="img-fluid w-100" src={greenImage} />
       </div>
       <section class="missing-container">
         <div class="missing-header">
@@ -71,48 +67,6 @@ const Home = () => {
           a tournament to remember by customizing your event to fit your needs.
           Everything from pre-tournament organization to post-event scoring and
           dinner, we are here to serve you and your group.
-        </div>
-        <div class="container directions">
-          <div class="row">
-            <div class="col-lg-8">
-              <iframe
-                class="map"
-                id="gmap_canvas"
-                src="https://maps.google.com/maps?q=7320%20fm2668%20bay%20city&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0"
-                scrolling="no"
-                marginheight="0"
-                marginwidth="0"
-              ></iframe>
-            </div>
-            <div class="col-lg-4">
-              <div>
-                <div>
-                  <h4>ADDRESS</h4>
-                  7320 FM2668, Bay City, TX 77414
-                </div>
-                <div>
-                  <h4>EMAIL</h4>
-                  playgolf@riocoloradogolfcourse.com
-                </div>
-                <div>
-                  <h4>PHONE NUMBER</h4>
-                  (979) 244-2955
-                </div>
-                <div>
-                  <h4>OPERATING HOURS:</h4>
-                  Sunday - Saturday
-                  <br />
-                  7:00AM - 5:30PM
-                </div>
-                <div class="directions-book-now">
-                  <button class="btn-shadow">
-                    <a href="">BOOK ONLINE</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </section>
