@@ -2,6 +2,8 @@ import React from "react";
 import crestLogo from "../../src/assets/img/riocolo-logo.png";
 import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
 import greenImage from "../../src/assets/img/riocolo-green.jpg";
+import Directions from "../components/Directions";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
