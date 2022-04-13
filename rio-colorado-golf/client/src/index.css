@@ -35,6 +35,14 @@ header {
 .home-hero {
   text-align: center;
   background: linear-gradient(to top, #ffffff, #c8dbfb);
+  position: sticky;
+  z-index: -50;
+  top: 1vh;
+}
+
+.text-logo img {
+  width: 35%;
+  position: absolute;
 }
 
 .header-img {
@@ -45,16 +53,11 @@ header {
   width: 25%;
 }
 
-.text-logo img {
-  width: 35%;
-  padding-top: 25px;
-}
-
 .text-logo {
   font-family: "lora", sans-serif;
   font-size: 6vw;
   color: #092d5b;
-  padding-top: 10px;
+  padding-top: 60px;
 }
 
 .crest-logo img {
@@ -107,6 +110,8 @@ button:hover {
 .intro-container {
   width: 75%;
   margin: 0 auto;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
 }
 
 .intro-welcome {
@@ -147,9 +152,11 @@ a {
 .missing-container {
   width: 75%;
   margin: 0 auto;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
 }
 .missing-header {
-  padding-top: 40px;
+  padding-top: 20px;
   text-align: center;
 }
 .missing-header h2 {
