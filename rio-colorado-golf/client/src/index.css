@@ -6,7 +6,7 @@
 
 main {
   min-height: 100vh;
-  background: white;
+  background: #ffffff;
   position: relative;
   z-index: 1;
 }
@@ -20,11 +20,15 @@ body h2 {
 }
 
 header {
-  background-color: #c8dbfb;
+  background-color: rgba(200, 219, 251, 1);
   padding-top: 25px;
   padding-bottom: 25px;
   justify-content: space-between;
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0 0 20px rgba(200, 219, 251, 1);
 }
 
 .home-hero {
@@ -201,14 +205,21 @@ a {
 }
 
 footer {
-  background-color: #092d5b;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;
+  background: #092d5b;
   display: grid;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 footer a {
