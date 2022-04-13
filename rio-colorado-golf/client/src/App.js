@@ -19,8 +19,6 @@ function App() {
             <Route exact path="/amenities" component={Amenities} />
           </Switch>
         </div>
-        {/* <Home /> */}
-        <Directions />
         <Footer />
       </div>
     </Router>

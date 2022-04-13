@@ -56,7 +56,7 @@ const Home = () => {
           </div>
           <div class="missing-amenities">
             <button class="btn-shadow">
-              <a href="">AMENITIES</a>
+              <a href="/amenities">AMENITIES</a>
             </button>
           </div>
         </section>
@@ -101,6 +101,7 @@ const Home = () => {
           </div>
         </footer> */}
       </section>
+      <Directions />
     </main>
   );
 };

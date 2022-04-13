@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import navImg from "../../assets/img/riocolo-logo.png";
 // import Auth from "../../utils/auth";
 
 const Nav = () => {
@@ -7,6 +8,11 @@ const Nav = () => {
     <header>
       <nav class="container-fluid">
         <div class="row justify-content-center align-items-center">
+          <div class="col-md-2 center-text">
+            <Link to="/">
+              <img class="header-img" src={navImg} />
+            </Link>
+          </div>
           <div class="col-md-2 center-text">
             <Link to="/course">COURSE</Link>
           </div>
