@@ -1,7 +1,3 @@
-const { gql } = require('apollo-server-express');
-
-const typeDefs = gql`
-type Pricing {
 const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
@@ -19,11 +15,6 @@ const typeDefs = gql`
     price: String
     priceTimeFrame: String
   }
-<<<<<<< HEAD
-
-  type Query  {
-      services: [Pricing]
-=======
   type Auth {
     token: ID!
     user: User
@@ -64,7 +55,6 @@ const typeDefs = gql`
       priceTimeFrame: String
     ): Pricing
     deleteService(_id: ID!): Pricing
->>>>>>> dev
   }
 `;
 
