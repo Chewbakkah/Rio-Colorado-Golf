@@ -1,33 +1,39 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import navImg from "../../assets/img/riocolo-logo.png";
 // import Auth from "../../utils/auth";
 
-function Nav() {
+const Nav = () => {
   return (
     <header>
       <nav class="container-fluid">
         <div class="row justify-content-center align-items-center">
           <div class="col-md-2 center-text">
-            <a href="#">COURSE</a>
+            <Link to="/">
+              <img class="header-img" src={navImg} />
+            </Link>
           </div>
           <div class="col-md-2 center-text">
-            <a href="#">AMENITIES</a>
+            <Link to="/course">COURSE</Link>
           </div>
           <div class="col-md-2 center-text">
-            <a href="#">EVENTS</a>
+            <Link to="/amenities">AMENITIES</Link>
           </div>
           <div class="col-md-2 center-text">
-            <a href="#">CONTACT</a>
+            <Link to="/events">EVENTS</Link>
+          </div>
+          <div class="col-md-2 center-text">
+            <Link to="/contact">CONTACT</Link>
           </div>
           <div class="col-md-2 center-text">
             <button>
-              <a href=" #">LOGIN</a>
+              <Link to="/login">LOGIN</Link>
             </button>
           </div>
         </div>
       </nav>
     </header>
   );
-}
+};
 
 export default Nav;

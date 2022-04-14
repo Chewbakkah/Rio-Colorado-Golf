@@ -19,14 +19,12 @@ header {
 }
 
 .home-hero {
-  /* background-image: url("/rio-colorado-golf/public/assets/img/riocolo-cup.jpg"); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* background-position-x: center; */
-  /* /* width: 100vw; */
-  /* height: 100vh; */
   text-align: center;
   background: linear-gradient(to top, #ffffff, #c8dbfb);
+}
+
+.home-hero img {
+  width: 50%;
 }
 
 .text-logo img {
@@ -129,14 +127,17 @@ button:hover {
 a {
   text-decoration: none;
 }
+
 .missing-container {
   width: 75%;
   margin: 0 auto;
 }
+
 .missing-header {
   padding-top: 40px;
   text-align: center;
 }
+
 .missing-header h2 {
   font-size: 3vw;
   text-shadow: 2px 2px 4px #afafaf;
@@ -144,19 +145,23 @@ a {
   color: #0270bf;
   border-bottom: 1px solid #afafaf;
 }
+
 .missing-text {
   padding-top: 40px;
   letter-spacing: 1px;
   color: #555555;
 }
+
 .missing-amenities {
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
 }
-.missing-img {
+
+.missing-img, .amenities-img {
   text-align: center;
 }
+
 .missing-amenities button {
   font-size: 24px;
   border-radius: 10px;
@@ -222,4 +227,160 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+} 
+
+.offsite-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.offsite-header {
+  text-align: center;
+}
+
+.offsite-header h2 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
+}
+
+.offsite-text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  color: #555555;
+}
+
+.course-container {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.course-header {
+  text-align: center;
+}
+
+.course-header h2 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
+}
+
+.course-text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  color: #555555;
+}
+
+.course-summary h2{
+  font-size: 2vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 2px;
+  color: #0270bf;
+  padding-top: 40px;
+}
+
+.course-stats {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  color: #555555;
+  margin: auto;
+}
+
+.hole-info-container {
+  background-color: #f6faff;
+  padding: 5%;
+}
+
+.hole-info-container h4{
+  color:#0270bf;
+  font-size: 2vw;
+}
+
+.hole-info-container select {
+  width: 50%;
+}
+
+.hole-header-txt {
+  color:#0270bf;
+  font-size: 3vw;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.hole-header-num {
+  font-size: 5.5vw;
+  font-weight: 450;
+}
+
+.hole-summary {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #555555;
+}  
+
+.hole-info-container h3{
+  color:#555555;
+  font-size: 2vw;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hole-yardage {
+  margin: 0 auto;
+  max-width: 60%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20%;
+  padding-right: 20px;
+  border: .5px solid #555555;
+  border-radius: 10px;
+  color: #555555;
+  font-size: 2.5vw;
+}
+
+.red-tee {
+  height: 25px;
+  width: 25px;
+  background-color: #cf5b5b;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.white-tee {
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #555555;
+  display: inline-block;
+}
+
+.blue-tee {
+  height: 25px;
+  width: 25px;
+  background-color: #488ecf;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.gold-tee {
+  height: 25px;
+  width: 25px;
+  background-color: #d1cc67;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.hole-info-container img {
+  width: 100%;
 }
