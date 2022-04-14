@@ -33,7 +33,7 @@ const UserSchema = new Schema(
             default: 'user'
         }, 
         membershipDate: {
-            type: Date, 
+            type: String, 
         }
     }
 ); 

@@ -7,7 +7,7 @@ const typeDefs = gql`
     lastName: String
     email: String
     role: String
-    membershipDate: Date
+    membershipDate: String
   }
   type Pricing {
     _id: ID
