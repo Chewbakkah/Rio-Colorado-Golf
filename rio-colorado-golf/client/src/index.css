@@ -13,6 +13,7 @@ main {
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 body h2 {
@@ -22,14 +23,98 @@ body h2 {
 header {
   /* background-color: rgba(200, 219, 251, 1); */
   background-color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  justify-content: space-between;
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  /* justify-content: space-between; */
+  /* display: flex; */
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 9999; */
+  /* border-bottom: 1px solid #afafaf; */
+}
+
+.flex {
   display: flex;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  border-bottom: 1px solid #afafaf;
+  gap: var(--gap, 1rem);
+}
+
+.header-img {
+  width: 3vw;
+  margin: 2rem;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.primary-navigation {
+  /* align-items: center; */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+@media (max-width: 35em) {
+  .primary-navigation {
+    --gap: 2em;
+
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+
+    flex-direction: column;
+    padding: min(20vh, 10rem) 2rem;
+    background: hsl(0 0% 100% / 0.9);
+    backdrop-filter: blur(1rem);
+    transform: translateX(120%);
+    transition: transform 350ms ease-out;
+  }
+
+  .header-img {
+    width: 10vw;
+  }
+  .header-text {
+    font-size: 20px;
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background: url("./assets/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    width: 2rem;
+    border: 0;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+  }
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background: url("assets/icon-close.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+  .primary-navigation {
+    background: hsl(0 0% 100% / 0.5);
+    backdrop-filter: blur(1rem);
+  }
 }
 
 .home-hero {
@@ -43,10 +128,6 @@ header {
 .text-logo img {
   width: 35%;
   position: absolute;
-}
-
-.header-img {
-  width: 25%;
 }
 
 .home-hero img {
@@ -70,7 +151,7 @@ nav {
 nav a {
   color: #0270bf;
   font-weight: 600;
-  font-size: 1.3vw;
+  font-size: 1vw;
   letter-spacing: 1.5px;
 }
 
@@ -78,7 +159,7 @@ nav a {
   text-align: center;
 }
 
-button {
+.btn {
   background-color: #0270bf;
   border: 0;
   border-radius: 5px;
@@ -88,17 +169,17 @@ button {
   padding-right: 0.75em;
 }
 
-button a {
+.btn a {
   color: white;
   letter-spacing: 2px;
   font-weight: 600;
 }
 
-button a:hover {
+.btn a:hover {
   color: white;
 }
 
-button:hover {
+.btn:hover {
   color: white;
   background-color: #092d5b;
 }
@@ -139,7 +220,7 @@ button:hover {
   text-align: center;
 }
 
-.intro-book-now button {
+.intro-book-now .btn {
   font-size: 24px;
   border-radius: 10px;
   padding-left: 2em;
@@ -180,7 +261,7 @@ a {
 .amenities-img {
   text-align: center;
 }
-.missing-amenities button {
+.missing-amenities .btn {
   font-size: 24px;
   border-radius: 10px;
   padding-left: 2em;
@@ -204,7 +285,7 @@ a {
   padding-bottom: 40px;
 }
 
-.directions-book-now button {
+.directions-book-now .btn {
   font-size: 24px;
   border-radius: 10px;
   padding-left: 2em;

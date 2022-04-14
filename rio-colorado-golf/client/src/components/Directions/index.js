@@ -36,7 +36,7 @@ function Directions() {
               7:00AM - 5:30PM
             </div>
             <div class="directions-book-now">
-              <button class="btn-shadow">
+              <button class="btn btn-shadow">
                 <a href="">BOOK ONLINE</a>
               </button>
             </div>
