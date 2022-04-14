@@ -111,4 +111,6 @@ db.once('open', async () => {
             priceTimeFrame: 'None'
         },
     ]);
-})
+
+    process.exit();
+});
