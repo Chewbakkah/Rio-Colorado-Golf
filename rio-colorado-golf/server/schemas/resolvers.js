@@ -3,7 +3,7 @@ const { signToken } = require("../utils/auth");
 const stripe = require("stripe")(
   "sk_test_51KaO22FV5HS8ufgmSBzTduwrg87SPn7ELoyDgOvQbBo3njBaGOn4fuFsrVFwvn3GXIzUe7ZzpfxiAdLIzYLWTjYu006xIUPkBl"
 );
-const { AuthenticationError } = require('apollo-server-express');
+const { AuthenticationError } = require("apollo-server-express");
 
 const resolvers = {
   Query: {
@@ -112,7 +112,7 @@ const resolvers = {
     },
 
     updateUser: async (parent, args) => {
-      return await User.findOneAndUpdate(args.email, args, {
+      return await User.findByIdAndUpdate(args._id, args, {
         new: true,
       });
     },
