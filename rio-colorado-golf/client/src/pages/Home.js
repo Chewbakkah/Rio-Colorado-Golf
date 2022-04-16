@@ -36,7 +36,7 @@ const Home = () => {
             Texas coast! Call and book your tee time today!
           </div>
           <div class="intro-book-now">
-            <button class="btn-shadow">
+            <button class="btn btn-shadow">
               <a href="">BOOK ONLINE</a>
             </button>
           </div>
@@ -56,7 +56,7 @@ const Home = () => {
             find at Rio Colorado.
           </div>
           <div class="missing-amenities">
-            <button class="btn-shadow">
+            <button class="btn btn-shadow">
               <a href="/amenities">AMENITIES</a>
             </button>
           </div>

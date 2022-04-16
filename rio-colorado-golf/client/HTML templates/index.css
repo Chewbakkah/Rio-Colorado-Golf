@@ -460,32 +460,21 @@ footer a:hover {
   padding-top: 20%;
 }
 
-.pricing-title {
-  margin: 5% 0;
-  font-size: 1.2em;
-  letter-spacing: 2px;
-  color:#0270bf;
+.events-container, .tournament-container {
+  width: 75%;
+  margin: auto;
 }
 
-.twi_pricing_title {
-  margin: 3% 0;
-  font-size: 1.2em;
-
-  letter-spacing: 2px;
-  color:#0270bf;
+.events-header h2, .tournament-header h2 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
+  text-align: center;
 }
 
-.pricing_r_align p {
-  text-align: right;
-}
-
-.pricing_margin {
-  margin-right: 34%;
-  line-height: 2.5;
-}
-
-.pricing_twi_margin {
-  margin-right: 42%;
-  line-height: 2.5;
-
+.tournament-results {
+  padding: 20px;
 }
