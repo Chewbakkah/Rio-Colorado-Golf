@@ -459,3 +459,22 @@ footer a:hover {
   text-align: center;
   padding-top: 20%;
 }
+
+.events-container, .tournament-container {
+  width: 75%;
+  margin: auto;
+}
+
+.events-header h2, .tournament-header h2 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.tournament-results {
+  padding: 20px;
+}
