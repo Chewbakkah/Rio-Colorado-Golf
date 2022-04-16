@@ -1,12 +1,12 @@
 import React from "react";
 import Calender from "../components/Calender/calender";
-import Placeholder from "../../src/assets/img/placeholder.png";
+import EventsImg from "../../src/assets/img/riocolo-events.jpg";
 
 const Events = () => {
   return (
     <section>
       <div class="alligator-img">
-        <img class="img-fluid w-100 img-shadow" src={Placeholder} />
+        <img class="img-fluid w-100 img-shadow" src={EventsImg} />
       </div>
       <div class="events-container">
         <div class="missing-header">
