@@ -35,30 +35,28 @@ header {
 
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  gap: var(--gap, 2rem);
 }
 
 .header-img {
-  width: 3vw;
-  margin: 2rem;
-}
-
-.mobile-nav-toggle {
-  display: none;
+  width: 75px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 .primary-header {
   align-items: center;
   justify-content: space-between;
   z-index: 2;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+/* .mobile-nav-toggle {
+  display: none;
 }
 
-.primary-navigation {
-  /* align-items: center; */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
 .primary-navigation a {
   text-decoration: none;
@@ -81,12 +79,6 @@ header {
     transition: transform 350ms ease-out;
   }
 
-  .header-img {
-    width: 10vw;
-  }
-  .header-text {
-    font-size: 20px;
-  }
 
   .primary-navigation[data-visible="true"] {
     transform: translateX(0%);
@@ -108,13 +100,9 @@ header {
     background: url("assets/icon-close.svg");
     background-repeat: no-repeat;
   }
-}
-
-@supports (backdrop-filter: blur(1rem)) {
-  .primary-navigation {
-    background: hsl(0 0% 100% / 0.5);
-    backdrop-filter: blur(1rem);
-  }
+} */
+.header-text {
+  font-size: 18px;
 }
 
 .home-hero {
@@ -123,6 +111,40 @@ header {
   position: sticky;
   z-index: -50;
   top: 1vh;
+}
+
+.MobileNavigation {
+  display: none;
+}
+
+/* @supports (backdrop-filter: blur(1rem)) {
+  .primary-navigation {
+    background: hsl(0 0% 100% / 0.5);
+    backdrop-filter: blur(1rem);
+  }
+} */
+
+TEST {
+  background: hsl(0 0% 100% / 0.5);
+  backdrop-filter: blur(1rem);
+  background-size: 100vh;
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 75%;
+  right: 0;
+  padding-right: 20px;
+  /* padding-top: 40%; */
+  background: hsl(0 0% 100% / 0.5);
+  backdrop-filter: blur(1rem);
+  background-size: 100vh;
+}
+
+.primary-navigation[data-visible="true"] {
+  transform: translateX(0%);
 }
 
 .text-logo img {
@@ -143,9 +165,6 @@ header {
 
 .crest-logo img {
   width: 15%;
-}
-
-nav {
 }
 
 nav a {
@@ -520,4 +539,109 @@ footer a:hover {
 
 .hole-info-container img {
   width: 100%;
+}
+@media (max-width: 990px) {
+  .Navigation {
+    display: none;
+  }
+
+  .MobileNavigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .MobileNavigation .Hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    top: 10px;
+    z-index: 9999;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    height: 100%;
+    z-index: 9998;
+    width: 100%;
+    list-style: none;
+  }
+  nav ul li {
+    padding-left: 40px;
+    padding-top: 0px;
+  }
+  .header-img {
+    width: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .primary-navigation {
+    height: 100vh;
+    padding-top: 40%;
+  }
+
+  .header-text {
+    font-size: 6vw;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+  .text-logo {
+    font-size: 8vw;
+    padding-top: 10px;
+  }
+  .crest-logo img {
+    display: none;
+  }
+  .intro-container,
+  .missing-container {
+    width: 100%;
+    padding-top: 0;
+  }
+  .intro-welcome h2,
+  .missing-header h2 {
+    font-size: 6vw;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+  }
+  .intro-text,
+  .missing-text {
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+  .missing-amenities {
+    padding-top: 40px;
+  }
+  .directions-book-now {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .directions-book-now {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #092d5b;
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  footer a {
+    color: #85a9c3;
+    font-size: 16px;
+  }
+  .social-icon {
+    color: white;
+    font-size: 5vw;
+    margin: 5px;
+  }
 }

@@ -1,23 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import navImg from "../../assets/img/riocolo-logo.png";
+import MobileNavigation from "./MobileNavigation";
+import Navigation from "./Navigation";
 // import Auth from "../../utils/auth";
 
+// const primaryNav = document.querySelector(".primary-navigation");
+// const navToggle = document.querySelector(".mobile-nav-toggle");
+
+// navToggle.addEventListener("click", () => {
+//   const visibility = primaryNav.getAttribute("data-visible");
+//   if (visibility === "false") {
+//     primaryNav.setAttribute("data-visible", true);
+//     navToggle.setAttribute("aria-expanded", true);
+//   } else if (visibility === "true") {
+//     primaryNav.setAttribute("data-visible", false);
+//     navToggle.setAttribute("aria-expanded", false);
+//   }
+// });
+
 const Nav = () => {
-  const primaryNav = document.querySelector(".primary-navigation");
-  const navToggle = document.querySelector(".mobile-nav-toggle");
-
-  navToggle.addEventListener("click", () => {
-    const visibility = primaryNav.getAttribute("data-visible");
-    if (visibility === "false") {
-      primaryNav.setAttribute("data-visible", true);
-      navToggle.setAttribute("aria-expanded", true);
-    } else if (visibility === "true") {
-      primaryNav.setAttribute("data-visible", false);
-      navToggle.setAttribute("aria-expanded", false);
-    }
-  });
-
   return (
     <header class="primary-header flex">
       <div>
@@ -26,15 +28,11 @@ const Nav = () => {
         </Link>
       </div>
 
-      <button
-        class="mobile-nav-toggle"
-        aria-controls="primary-navigation"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Menu</span>
-      </button>
-
-      <nav>
+      <div>
+        <MobileNavigation />
+        <Navigation />
+      </div>
+      {/* <nav>
         <ul
           id="primary-navigation"
           data-visible="false"
@@ -68,7 +66,7 @@ const Nav = () => {
             </button>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </header>
 
     // <header>
