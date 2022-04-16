@@ -60,6 +60,7 @@ const changeHole = (e) => {
             aria-label="Choose Hole"
             onChange={changeHole}
           >
+            <option value="1"></option>
             <option value="1">Hole 1</option>
             <option value="2">Hole 2</option>
             <option value="3">Hole 3</option>
