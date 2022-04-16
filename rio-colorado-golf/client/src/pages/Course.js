@@ -45,7 +45,7 @@ const Course = () => {
             </div>
           </div>
           <div class="course-amenities">
-            <button class="btn-shadow">
+            <button class="btn btn-shadow">
               <a href="">VIEW AMENITIES</a>
             </button>
           </div>

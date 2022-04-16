@@ -6,13 +6,13 @@ function Directions() {
       <div class="row">
         <div class="col-lg-8">
           <iframe
-            class="map"
+            className="map"
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=7320%20fm2668%20bay%20city&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
-            marginheight="0"
-            marginwidth="0"
+            marginHeight="0"
+            marginWidth="0"
           ></iframe>
         </div>
         <div class="col-lg-4">
@@ -36,7 +36,7 @@ function Directions() {
               7:00AM - 5:30PM
             </div>
             <div class="directions-book-now">
-              <button class="btn-shadow">
+              <button class="btn btn-shadow">
                 <a href="">BOOK ONLINE</a>
               </button>
             </div>

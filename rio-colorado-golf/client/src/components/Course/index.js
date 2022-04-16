@@ -1,8 +1,13 @@
 import React from "react";
 import hole1 from "../../assets/img/riocolo-hole1.png";
 import Selector from "./selector";
+import { golfHoles } from "../../data";
 
-function Holes() {
+function Holes({ golfHoles }) {
+  // const golfHoleData = golfHoles.hole1.map((golfHoleData) => {
+  //   return <p key={hole1.paragraph}></p>;
+  // });
+
   return (
     <section class="container-fluid hole-info-container">
       <div class="row">
