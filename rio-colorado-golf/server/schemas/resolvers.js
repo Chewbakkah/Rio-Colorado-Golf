@@ -1,9 +1,9 @@
 const { User, Pricing } = require("../models");
 const { signToken } = require("../utils/auth");
-const stripe = require("stripe")(
-  "sk_test_51KaO22FV5HS8ufgmSBzTduwrg87SPn7ELoyDgOvQbBo3njBaGOn4fuFsrVFwvn3GXIzUe7ZzpfxiAdLIzYLWTjYu006xIUPkBl"
-);
-const { AuthenticationError } = require('apollo-server-express');
+//const stripe = require("stripe")(
+//  "sk_test_51KaO22FV5HS8ufgmSBzTduwrg87SPn7ELoyDgOvQbBo3njBaGOn4fuFsrVFwvn3GXIzUe7ZzpfxiAdLIzYLWTjYu006xIUPkBl"
+//);
+const { AuthenticationError } = require("apollo-server-express");
 
 const resolvers = {
   Query: {
@@ -31,8 +31,9 @@ const resolvers = {
       return await Pricing.find();
     },
 
-    servicesByTime: async () => {
-      return await Pricing.find({ priceTimeFrame });
+    // ISSUES
+    servicesByTime: async (parent, { timeFrame }) => {
+      return await Pricing.find({ priceTimeFrame: timeFrame });
     },
 
     // order: async (parent, { _id }, context) => {
@@ -112,25 +113,28 @@ const resolvers = {
     },
 
     updateUser: async (parent, args) => {
-      return await User.findOneAndUpdate(args.email, args, {
+      return await User.findByIdAndUpdate(args._id, args, {
         new: true,
       });
     },
 
-    deleteUser: async (parent, { email }) => {
-      return await User.findOneAndDelete(email);
+    // HAD TO BE UPDATED TYPEDEFS TOO
+    deleteUser: async (parent, { _id }) => {
+      return await User.findByIdAndDelete(_id);
     },
 
     addService: async (parent, args) => {
       return await Pricing.create(args);
     },
 
+    // HAD TO BE UPDATED
     updateService: async (parent, args) => {
-      return await Pricing.findOneAndUpdate(args._id, args, { new: true });
+      return await Pricing.findByIdAndUpdate(args._id, args, { new: true });
     },
 
+    // HAD TO BE UPDATED
     deleteService: async (parent, { _id }) => {
-      return await Pricing.findOneAndDelete(_id);
+      return await Pricing.findByIdAndDelete(_id);
     },
   },
 };
