@@ -23,6 +23,7 @@ body h2 {
 header {
   /* background-color: rgba(200, 219, 251, 1); */
   background-color: #ffffff;
+
   /* padding-top: 10px; */
   /* padding-bottom: 10px; */
   /* justify-content: space-between; */
@@ -177,6 +178,65 @@ nav a {
 .center-text {
   text-align: center;
 }
+/* 
+.new-btn {
+  position: relative;
+  padding: 1.4rem 4.2rem;
+  padding-right: 3.1rem;
+  font-size: 1.4rem;
+  color: white;
+  letter-spacing: 1.1rem;
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.new-btn:before,
+.new-btn:after {
+  content: "";
+  position: absolute;
+  transition: inherit;
+  z-index: 0;
+}
+
+.new-btn:hover {
+  color: #96b7c4;
+  transition-delay: 0.5s;
+}
+
+.new-btn:hover:before {
+  transition-delay: 0s;
+}
+
+.new-btn:hover:after {
+  background: black;
+  transition-delay: 0.35s;
+}
+
+.from-bottom:before,
+.from-bottom:after {
+  left: 0;
+  height: 0;
+  width: 100%;
+}
+
+.from-bottom:before {
+  top: 0;
+  border: 1px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.from-bottom:after {
+  bottom: 0;
+  height: 0;
+}
+
+.from-bottom:hover:before,
+.from-bottom:hover:after {
+  height: 100%;
+} */
 
 .btn {
   background-color: #0270bf;
@@ -249,7 +309,9 @@ nav a {
 a {
   text-decoration: none;
 }
-.missing-container {
+.missing-container,
+.events-container,
+.tournament-container {
   width: 75%;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 1);
@@ -317,6 +379,7 @@ a {
 }
 
 footer {
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -540,6 +603,11 @@ footer a:hover {
 .hole-info-container img {
   width: 100%;
 }
+
+.tournament-results {
+  padding: 20px;
+}
+
 @media (max-width: 990px) {
   .Navigation {
     display: none;
@@ -643,5 +711,41 @@ footer a:hover {
     color: white;
     font-size: 5vw;
     margin: 5px;
+  }
+}
+.calender-button {
+  display: none;
+}
+
+.calender-btn {
+  background-color: #0270bf;
+  border: 0;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.calender-btn a {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .calender-container {
+    display: none;
+    /* height: 100%; */
+  }
+  .calender-button {
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
   }
 }
