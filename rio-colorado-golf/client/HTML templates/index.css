@@ -459,3 +459,33 @@ footer a:hover {
   text-align: center;
   padding-top: 20%;
 }
+
+.pricing-title {
+  margin: 5% 0;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color:#0270bf;
+}
+
+.twi_pricing_title {
+  margin: 3% 0;
+  font-size: 1.2em;
+
+  letter-spacing: 2px;
+  color:#0270bf;
+}
+
+.pricing_r_align p {
+  text-align: right;
+}
+
+.pricing_margin {
+  margin-right: 34%;
+  line-height: 2.5;
+}
+
+.pricing_twi_margin {
+  margin-right: 42%;
+  line-height: 2.5;
+
+}

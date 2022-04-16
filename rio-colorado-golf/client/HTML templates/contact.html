@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./index.css" rel="stylesheet" />
+    <title>Rio Colorado Golf Course</title>
+</head>
+
+<body>
+    <section class="home-hero">
+        <header>
+            <nav class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-2 center-text"><a href="#">COURSE</a></div>
+                    <div class="col-md-2 center-text"><a href="#">AMENITIES</a></div>
+                    <div class="col-md-2 center-text"><a href="#">EVENTS</a></div>
+                    <div class="col-md-2 center-text"><a href="#">CONTACT</a></div>
+                    <div class="col-md-2 center-text">
+                        <button><a href=" #">LOGIN</a></button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="text-logo">Rio Colorado
+
+        </div>
+        <div class="crest-logo">
+            <img src="/Users/corydavis/Desktop/UTA-Final-Project/rio-colorado-golf/client/src/assets/img/riocolo-logo.png"
+                alt="Rio Colorado Logo" />
+        </div>
+    </section>
+    <div class="hole-img">
+        <img class="img-fluid w-100 img-shadow"
+            src="/Users/corydavis/Desktop/UTA-Final-Project/rio-colorado-golf/client/src/assets/img/riocolo-cup-slice.jpg" />
+    </div>
+    <section class="intro-container">
+        <div class="intro-welcome">
+            <h2>CONTACT INFORMATION</h2>
+        </div>
+        <div class="intro-text">
+            Our staff of professionals are ready and eager to assist with the planning and hosting of your private event
+            or corporate outing. Rio Colorado has the facilities to customize your event to exceed your every
+            expectation. Everything from pre-tournament organizing, to post-event scoring, to even providing dinner, we
+            are here to serve you and make your next game one to remember.
+        </div>
+        <div class="intro-book-now">
+            <button class="btn-shadow"><a href="">BOOK ONLINE</a></button>
+        </div>
+    </section>
+    <section class="missing-container">
+        <div class="missing-header">
+            <h2>PRICING</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="pricing-title text-center">WEEKDAY</h6>
+                    <div class="text-center pricing_r_align pricing_margin">
+                        <p>REGULAR: $<span id="weekday-regular">34</span>
+                            <br />
+                            JR/SR(62+): $<span id="weekday-regular">29</span>
+                            <br />
+                            9-HOLES: $<span id="weekday-regular">24</span>
+                            <br />
+                            TWILIGHT: $<span id="weekday-regular">28</span>
+                            <br />
+                            WALKING PHOENIX: $<span id="weekday-regular">20</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="pricing-title text-center">WEEKEND/HOLIDAYS</h6>
+                    <div class="text-center pricing_r_align pricing_margin">
+                        <p>REGULAR: $<span id="weekday-regular">44</span>
+                            <br />
+                            JR/SR(62+): $<span id="weekday-regular">33</span>
+                            <br />
+                            9-HOLES: $<span id="weekday-regular">29</span>
+                            <br />
+                            TWILIGHT: $<span id="weekday-regular">33</span>
+                            <br />
+                            WALKING PHOENIX: $<span id="weekday-regular">25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h6 class="twi_pricing_title text-center">TWILIGHT: 3 PM</h6>
+                    <div class="text-center pricing_r_align pricing_twi_margin">
+                        <p>SINGLE/3-SOME: $<span id="weekday-regular">5</span>
+                            <br />
+                            REPLAY 9 HOLES: $<span id="weekday-regular">12</span>
+                            <br />
+                            REPLAY 18 HOLES: $<span id="weekday-regular">17</span>
+                            <br />
+                            RANGE SMALL: $<span id="weekday-regular">6</span>
+                            <br />
+                            REPLAY LARGE: $<span id="weekday-regular">9</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="missing-container">
+        <div class="container directions">
+            <div class="row">
+                <div class="col-lg-8"><iframe class="map" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=7320%20fm2668%20bay%20city&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                <div class="col-lg-4">
+                    <div>
+                        <div>
+                            <h4>ADDRESS</h4>
+                            7320 FM2668, Bay City, TX 77414
+                        </div>
+                        <div>
+                            <h4>EMAIL</h4>
+                            playgolf@riocoloradogolfcourse.com
+                        </div>
+                        <div>
+                            <h4>PHONE NUMBER</h4>
+                            (979) 244-2955
+                        </div>
+                        <div>
+                            <h4>OPERATING HOURS:</h4>
+                            Sunday - Saturday<br />
+                            7:00AM - 5:30PM
+                        </div>
+                        <div class="directions-book-now">
+                            <button class="btn-shadow"><a href="">BOOK ONLINE</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-2 center-text"><a href="#">COURSE</a></div>
+            <div class="col-md-2 center-text"><a href="#">AMENITIES</a></div>
+            <div class="col-md-2 center-text"><a href="#">EVENTS</a></div>
+            <div class="col-md-2 center-text"><a href="#">CONTACT</a></div>
+            <div class="col-md-4 center-text vert-align">
+                <span class="follow-us">FOLLOW US:</span> <a
+                    href="https://www.facebook.com/Rio-Colorado-Golf-Course-152518368102169"><i
+                        class="fa-brands fa-facebook social-icon"></i></a>
+                <a href="https://www.instagram.com/riocoloradogc/"><i
+                        class="fa-brands fa-instagram social-icon"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
