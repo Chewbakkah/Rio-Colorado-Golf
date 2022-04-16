@@ -1,9 +1,8 @@
-import React from "react";
-import hole1 from "../../assets/img/riocolo-hole1.png";
-import Selector from "./selector";
+import React, { useState } from "react";
 import hole1img from "../../assets/img/riocolo-hole1.png";
 
 function Holes() {
+  const [selector, setSelector] = useState(0);
   const golfHoles = {
     holes: [
       {
@@ -32,26 +31,38 @@ function Holes() {
         goldTee: "528",
         image: hole1img,
       },
+      {
+        name: "3",
+        paragraph: `testing testing testing`,
+        stats: "PAR 4  |  HCP 17",
+        redTee: "438",
+        whiteTee: "473",
+        blueTee: "508",
+        goldTee: "528",
+        image: hole1img,
+      },
     ],
   };
+
+  const changeHole = (e) => {
+    e.preventDefault();
+    setSelector(e.target.value - 1);
+  };
+
   const holeData = golfHoles.holes.map((course) => {
     return (
       <div className="row" key={course.name}>
         <div className="col-md-5">
           <h4>CHOOSE ONE:</h4>
-          {/* <Selector /> */}
-
           <select
             id="holeSelector"
             class="form-select hole-select"
             aria-label="Choose Hole"
+            onChange={changeHole}
           >
-            <option value="1" onClick={0}>
-              Hole 1
-            </option>
-            <option value="2" onClick={1}>
-              Hole 2
-            </option>
+            <option value="1"></option>
+            <option value="1">Hole 1</option>
+            <option value="2">Hole 2</option>
             <option value="3">Hole 3</option>
             <option value="4">Hole 4</option>
             <option value="5">Hole 5</option>
@@ -95,7 +106,7 @@ function Holes() {
 
   return (
     <section className="container-fluid hole-info-container">
-      <div key="courseData">{holeData[0]}</div>
+      <div key="courseData">{holeData[selector]}</div>
     </section>
   );
 }
