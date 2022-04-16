@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import crestLogo from "../../src/assets/img/riocolo-logo.png";
 import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
 import holeImageGrad from "../../src/assets/img/riocolo-wht-gradient.png";
@@ -7,14 +8,28 @@ import Directions from "../components/Directions";
 import Footer from "../components/Footer";
 
 const Home = () => {
+  const animateFrom = { opacity: 0, y: -100 };
+  const animateTo = { opacity: 1, y: 0 };
   return (
     <main>
       <section>
         <section class="home-hero">
-          <div class="text-logo">Rio Colorado</div>
-          <div class="crest-logo">
+          <motion.div
+            initial={animateFrom}
+            animate={animateTo}
+            transition={{ delay: 1 }}
+            class="text-logo"
+          >
+            Rio Colorado
+          </motion.div>
+          <motion.div
+            initial={animateFrom}
+            animate={animateTo}
+            transition={{ delay: 0.5 }}
+            class="crest-logo"
+          >
             <img src={crestLogo} alt="Rio Colorado Logo" />
-          </div>
+          </motion.div>
         </section>
         <img class="img-fluid w-100" src={holeImageGrad} />
         <img class="img-fluid w-100 img-shadow" src={holeImage} />
@@ -39,6 +54,9 @@ const Home = () => {
             <button class="btn btn-shadow">
               <a href="">BOOK ONLINE</a>
             </button>
+            {/* <div class="new-btn from-bottom">
+              <a href="">BOOK ONLINE</a>
+            </div> */}
           </div>
         </section>
         <div class="missing-img">
