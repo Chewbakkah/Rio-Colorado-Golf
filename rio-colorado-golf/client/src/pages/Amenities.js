@@ -1,6 +1,6 @@
 import React from "react";
 import Directions from "../components/Directions";
-import amenHeaderImg from "../../src/assets/img/riocolo-amenities.png";
+import amenHeaderImg from "../../src/assets/img/riocolo-amenities.jpg";
 import campImg from "../../src/assets/img/riocolo-camp.jpg";
 
 const Amenities = () => {
