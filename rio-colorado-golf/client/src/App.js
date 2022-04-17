@@ -10,7 +10,6 @@ import { setContext } from "@apollo/client/link/context";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Directions from "./components/Directions";
 
 import Home from "./pages/Home";
 import Amenities from "./pages/Amenities";
