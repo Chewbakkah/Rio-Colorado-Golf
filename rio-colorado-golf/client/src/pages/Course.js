@@ -1,5 +1,5 @@
 import React from "react";
-import courseImg from "../../src/assets/img/placeholder.png";
+import courseImg from "../../src/assets/img/full_course_graphic.jpg";
 import Holes from "../components/Course";
 
 const Course = () => {
@@ -45,7 +45,7 @@ const Course = () => {
             </div>
           </div>
           <div class="course-amenities">
-            <button class="btn-shadow">
+            <button class="btn btn-shadow">
               <a href="">VIEW AMENITIES</a>
             </button>
           </div>
