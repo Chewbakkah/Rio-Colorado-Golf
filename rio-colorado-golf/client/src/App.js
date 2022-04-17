@@ -19,6 +19,7 @@ import Events from "./pages/Events";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Contact from "./pages/Contact";
+import Admin from "./pages/Admin";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -53,6 +54,7 @@ function App() {
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/admin" component={Admin} />
           </Switch>
         </div>
         <Footer />
