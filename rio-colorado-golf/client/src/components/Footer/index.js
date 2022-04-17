@@ -3,27 +3,27 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer class="container-fluid">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-2 center-text">
+    <footer className="container-fluid">
+      <div className="row justify-content-center align-items-center">
+        <div className="col-md-2 center-text">
           <Link to="/course">COURSE</Link>
         </div>
-        <div class="col-md-2 center-text">
+        <div className="col-md-2 center-text">
           <Link to="/amenities">AMENITIES</Link>
         </div>
-        <div class="col-md-2 center-text">
+        <div className="col-md-2 center-text">
           <Link to="/events">EVENTS</Link>
         </div>
-        <div class="col-md-2 center-text">
+        <div className="col-md-2 center-text">
           <Link to="/contact">CONTACT</Link>
         </div>
-        <div class="col-md-4 center-text vert-align">
-          <span class="follow-us">FOLLOW US:</span>{" "}
+        <div className="col-md-4 center-text vert-align">
+          <span className="follow-us">FOLLOW US:</span>{" "}
           <a href="https://www.facebook.com/Rio-Colorado-Golf-Course-152518368102169">
-            <i class="fa-brands fa-facebook social-icon"></i>
+            <i className="fa-brands fa-facebook social-icon"></i>
           </a>
           <a href="https://www.instagram.com/riocoloradogc/">
-            <i class="fa-brands fa-instagram social-icon"></i>
+            <i className="fa-brands fa-instagram social-icon"></i>
           </a>
         </div>
       </div>

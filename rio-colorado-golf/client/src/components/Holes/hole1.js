@@ -3,7 +3,7 @@ import React from "react";
 function hole1() {
   return (
     <section>
-      <p class="hole-summary">
+      <p className="hole-summary">
         Your round begins with a risk/reward Par 5 that plays 528 yards from the
         back tees. Water runs along the entire left side of the hole and the
         driving range to the right of the tees is out of bounds. A tee shot hit

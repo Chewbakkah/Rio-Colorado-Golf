@@ -2,7 +2,7 @@ import React from "react";
 
 const Calender = () => {
   return (
-    <div class="calender-container">
+    <div className="calender-container">
       <iframe
         src="//localendar.com/public/RioColoradoGC"
         height="1000"

@@ -56,7 +56,7 @@ function Holes() {
           <h4>CHOOSE ONE:</h4>
           <select
             id="holeSelector"
-            class="form-select hole-select"
+            className="form-select hole-select"
             aria-label="Choose Hole"
             onChange={changeHole}
           >
