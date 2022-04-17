@@ -1,4 +1,4 @@
-4* {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -158,7 +158,8 @@ a {
   text-align: center;
 }
 
-.missing-img, .amenities-img {
+.missing-img,
+.amenities-img {
   text-align: center;
 }
 
@@ -227,7 +228,7 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+}
 
 .offsite-container {
   width: 75%;
@@ -280,7 +281,7 @@ footer a:hover {
   color: #555555;
 }
 
-.course-summary h2{
+.course-summary h2 {
   font-size: 2vw;
   text-shadow: 2px 2px 4px #afafaf;
   letter-spacing: 2px;
@@ -301,8 +302,8 @@ footer a:hover {
   padding: 5%;
 }
 
-.hole-info-container h4{
-  color:#0270bf;
+.hole-info-container h4 {
+  color: #0270bf;
   font-size: 2vw;
 }
 
@@ -311,7 +312,7 @@ footer a:hover {
 }
 
 .hole-header-txt {
-  color:#0270bf;
+  color: #0270bf;
   font-size: 3vw;
   font-weight: 500;
   padding-top: 20px;
@@ -326,10 +327,10 @@ footer a:hover {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #555555;
-}  
+}
 
-.hole-info-container h3{
-  color:#555555;
+.hole-info-container h3 {
+  color: #555555;
   font-size: 2vw;
   font-weight: 600;
   text-align: center;
@@ -342,7 +343,7 @@ footer a:hover {
   padding-bottom: 15px;
   padding-left: 20%;
   padding-right: 20px;
-  border: .5px solid #555555;
+  border: 0.5px solid #555555;
   border-radius: 10px;
   color: #555555;
   font-size: 2.5vw;
@@ -388,7 +389,7 @@ footer a:hover {
 .login-container {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to top, #092D58, #0270BF);
+  background: linear-gradient(to top, #092d58, #0270bf);
   text-align: center;
   padding-top: 30%;
 }
@@ -406,11 +407,11 @@ footer a:hover {
   color: #555555;
 }
 
-.login-card h2{
-    font-family: "lora", sans-serif;
-    font-size: 4vw;
-    color: #092d5b;
-    padding-top: 10px;  
+.login-card h2 {
+  font-family: "lora", sans-serif;
+  font-size: 4vw;
+  color: #092d5b;
+  padding-top: 10px;
 }
 
 .login-card form {
@@ -455,17 +456,19 @@ footer a:hover {
 .sign-up-container {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to top, #092D58, #0270BF);
+  background: linear-gradient(to top, #092d58, #0270bf);
   text-align: center;
   padding-top: 20%;
 }
 
-.events-container, .tournament-container {
+.events-container,
+.tournament-container {
   width: 75%;
   margin: auto;
 }
 
-.events-header h2, .tournament-header h2 {
+.events-header h2,
+.tournament-header h2 {
   font-size: 4vw;
   text-shadow: 2px 2px 4px #afafaf;
   letter-spacing: 3px;
@@ -483,7 +486,7 @@ footer a:hover {
   margin: 5% 0;
   font-size: 1.2em;
   letter-spacing: 2px;
-  color:#0270bf;
+  color: #0270bf;
 }
 
 .twi_pricing_title {
@@ -491,7 +494,7 @@ footer a:hover {
   font-size: 1.2em;
 
   letter-spacing: 2px;
-  color:#0270bf;
+  color: #0270bf;
 }
 
 .pricing_r_align p {
@@ -506,16 +509,14 @@ footer a:hover {
 .pricing_twi_margin {
   margin-right: 42%;
   line-height: 2.5;
-
-} 
-
+}
 
 /* begin admin page  */
 
 .admin-container {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(to top, #092D58, #0270BF);
+  background: linear-gradient(to top, #092d58, #0270bf);
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -560,7 +561,9 @@ footer a:hover {
   font-weight: 600;
 }
 
-.member-control span, .search-header, .user-search-results {
+.member-control span,
+.search-header,
+.user-search-results {
   font-size: 1vw;
 }
 
