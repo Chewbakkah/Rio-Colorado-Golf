@@ -19,14 +19,12 @@ header {
 }
 
 .home-hero {
-  /* background-image: url("/rio-colorado-golf/public/assets/img/riocolo-cup.jpg"); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* background-position-x: center; */
-  /* /* width: 100vw; */
-  /* height: 100vh; */
   text-align: center;
   background: linear-gradient(to top, #ffffff, #c8dbfb);
+}
+
+.home-hero img {
+  width: 50%;
 }
 
 .text-logo img {
@@ -129,14 +127,17 @@ button:hover {
 a {
   text-decoration: none;
 }
+
 .missing-container {
   width: 75%;
   margin: 0 auto;
 }
+
 .missing-header {
   padding-top: 40px;
   text-align: center;
 }
+
 .missing-header h2 {
   font-size: 3vw;
   text-shadow: 2px 2px 4px #afafaf;
@@ -144,19 +145,24 @@ a {
   color: #0270bf;
   border-bottom: 1px solid #afafaf;
 }
+
 .missing-text {
   padding-top: 40px;
   letter-spacing: 1px;
   color: #555555;
 }
+
 .missing-amenities {
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
 }
-.missing-img {
+
+.missing-img,
+.amenities-img {
   text-align: center;
 }
+
 .missing-amenities button {
   font-size: 24px;
   border-radius: 10px;
@@ -222,4 +228,377 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.offsite-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.offsite-header {
+  text-align: center;
+}
+
+.offsite-header h2 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
+}
+
+.offsite-text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  color: #555555;
+}
+
+.course-container {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.course-header {
+  text-align: center;
+}
+
+.course-header h2 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
+}
+
+.course-text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  color: #555555;
+}
+
+.course-summary h2 {
+  font-size: 2vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 2px;
+  color: #0270bf;
+  padding-top: 40px;
+}
+
+.course-stats {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+  color: #555555;
+  margin: auto;
+}
+
+.hole-info-container {
+  background-color: #f6faff;
+  padding: 5%;
+}
+
+.hole-info-container h4 {
+  color: #0270bf;
+  font-size: 2vw;
+}
+
+.hole-info-container select {
+  width: 50%;
+}
+
+.hole-header-txt {
+  color: #0270bf;
+  font-size: 3vw;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.hole-header-num {
+  font-size: 5.5vw;
+  font-weight: 450;
+}
+
+.hole-summary {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #555555;
+}
+
+.hole-info-container h3 {
+  color: #555555;
+  font-size: 2vw;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hole-yardage {
+  margin: 0 auto;
+  max-width: 60%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20%;
+  padding-right: 20px;
+  border: 0.5px solid #555555;
+  border-radius: 10px;
+  color: #555555;
+  font-size: 2.5vw;
+}
+
+.red-tee {
+  height: 25px;
+  width: 25px;
+  background-color: #cf5b5b;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.white-tee {
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #555555;
+  display: inline-block;
+}
+
+.blue-tee {
+  height: 25px;
+  width: 25px;
+  background-color: #488ecf;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.gold-tee {
+  height: 25px;
+  width: 25px;
+  background-color: #d1cc67;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.hole-info-container img {
+  width: 100%;
+}
+
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, #092d58, #0270bf);
+  text-align: center;
+  padding-top: 30%;
+}
+
+.login-card {
+  margin: auto;
+  padding: 5%;
+  width: 45%;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.exit-icon {
+  text-decoration: none;
+  color: #555555;
+}
+
+.login-card h2 {
+  font-family: "lora", sans-serif;
+  font-size: 4vw;
+  color: #092d5b;
+  padding-top: 10px;
+}
+
+.login-card form {
+  text-align: left;
+  margin-left: 5%;
+}
+
+.login-card input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.login-text {
+  display: block;
+  font-size: 1.75vw;
+  padding-top: 10px;
+}
+
+.login-card button {
+  margin-top: 20px;
+}
+
+.login-button {
+  width: 50%;
+}
+
+.sign-up-card {
+  margin: auto;
+  margin-top: 30px;
+  padding: 5%;
+  width: 45%;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.sign-up-card h2 {
+  font-size: 2vw;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.sign-up-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, #092d58, #0270bf);
+  text-align: center;
+  padding-top: 20%;
+}
+
+.events-container,
+.tournament-container {
+  width: 75%;
+  margin: auto;
+}
+
+.events-header h2,
+.tournament-header h2 {
+  font-size: 4vw;
+  text-shadow: 2px 2px 4px #afafaf;
+  letter-spacing: 3px;
+  color: #0270bf;
+  border-bottom: 1px solid #afafaf;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.tournament-results {
+  padding: 20px;
+}
+
+.pricing-title {
+  margin: 5% 0;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: #0270bf;
+}
+
+.twi_pricing_title {
+  margin: 3% 0;
+  font-size: 1.2em;
+
+  letter-spacing: 2px;
+  color: #0270bf;
+}
+
+.pricing_r_align p {
+  text-align: right;
+}
+
+.pricing_margin {
+  margin-right: 34%;
+  line-height: 2.5;
+}
+
+.pricing_twi_margin {
+  margin-right: 42%;
+  line-height: 2.5;
+}
+
+/* begin admin page  */
+
+.admin-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, #092d58, #0270bf);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.admin-container input {
+  background-color: #f6faff;
+}
+
+.admin-container button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.admin-card {
+  background-color: #ffffff;
+  width: 80%;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+.admin-card h3 {
+  font-size: 2vw;
+}
+
+.admin-header img {
+  width: 20%;
+  padding-right: 30px;
+}
+
+.admin-header-logo {
+  display: inline-block;
+  font-family: "lora", sans-serif;
+  font-size: 3.5vw;
+  color: #092d5b;
+}
+
+.admin-header-txt {
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.member-control span,
+.search-header,
+.user-search-results {
+  font-size: 1vw;
+}
+
+.delete {
+  color: #ff0000;
+}
+
+.user-search-results {
+  background-color: #dddddd;
+}
+
+.search-results {
+  border-bottom: 1px solid #333333;
+  padding: 2px;
+}
+
+.pricing-control input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.pricing-type {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}
+
+.pricing-card {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom-misc {
+  padding-top: 20px;
 }

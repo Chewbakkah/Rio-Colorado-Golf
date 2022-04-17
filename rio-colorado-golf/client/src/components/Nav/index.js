@@ -1,33 +1,27 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import Auth from "../../utils/auth";
+import { Link } from "react-router-dom";
+import navImg from "../../assets/img/riocolo-logo.png";
+import MobileNavigation from "./MobileNavigation";
+import Navigation from "./Navigation";
 
-function Nav() {
+
+const Nav = () => {
   return (
-    <header>
-      <nav class="container-fluid">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-2 center-text">
-            <a href="#">COURSE</a>
-          </div>
-          <div class="col-md-2 center-text">
-            <a href="#">AMENITIES</a>
-          </div>
-          <div class="col-md-2 center-text">
-            <a href="#">EVENTS</a>
-          </div>
-          <div class="col-md-2 center-text">
-            <a href="#">CONTACT</a>
-          </div>
-          <div class="col-md-2 center-text">
-            <button>
-              <a href=" #">LOGIN</a>
-            </button>
-          </div>
-        </div>
-      </nav>
+    <header className="primary-header flex">
+      <div>
+        <Link to="/">
+          <img className="header-img" src={navImg} />
+        </Link>
+      </div>
+
+      <div>
+        <MobileNavigation />
+        <Navigation />
+      </div>
+      
     </header>
+
   );
-}
+};
 
 export default Nav;
