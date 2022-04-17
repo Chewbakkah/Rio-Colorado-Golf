@@ -1,23 +1,25 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 const Signup = () => {
+  const history = useHistory();
   return (
     <section className="sign-up-container">
-      <div className="login-card container row">
-        <div className="row justify-content-end">
-          <div className="col-md-2">
-            <a className="exit-icon" href="#">
-              <i className="fa-solid fa-xmark"></i>
-            </a>
-          </div>
+      <div className="login-card">
+        <div className="float-end d-inline p-2">
+          <a className="exit-icon" onClick={() => history.goBack()}>
+            <i className="fa-solid fa-xmark"></i>
+          </a>
         </div>
-        <h2>Rio Colorado</h2>
+
+        <h2 class="d-inline">Rio Colorado</h2>
+
         <form>
           <div className="form-row">
-            <div className="col-7">
+            <div>
               <span className="login-text">FIRST NAME:</span>
               <input
-                className="form-input"
+                className="form-input "
                 type="text"
                 placeholder="ENTER YOUR FIRST NAME"
                 name="signup-first-name"
@@ -61,7 +63,7 @@ const Signup = () => {
                 size="40"
               />
               <div className="row justify-content-center">
-                <div className="col-md-6 offset-md-3">
+                <div className="sign-up-button">
                   <button className="btn btn-shadow login-button" type="submit">
                     <a href="">LOGIN</a>
                   </button>

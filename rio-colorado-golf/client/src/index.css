@@ -14,6 +14,7 @@ main {
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  height: 100vh;
 }
 
 body h2 {
@@ -412,7 +413,7 @@ body {
 
 footer a {
   color: #85a9c3;
-  font-size: 1.3vw;
+  font-size: 18px;
 }
 
 footer a:hover {
@@ -627,23 +628,24 @@ footer a:hover {
   padding: 20px;
 }
 
-.login-container {
-  /* height: 100vh;
-  width: 100vw; */
-  background: linear-gradient(to top, #092d58, #0270bf);
-  text-align: center;
-  padding-top: 30%;
-}
-
 .login-card {
+  width: 100%;
   margin: auto;
-  padding: 5%;
-  width: 75vw;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-top: 4%;
+  width: 50vw;
   background-color: #ffffff;
   border-radius: 5px;
 }
 
+.float-end {
+  padding: 0;
+}
+
 .exit-icon {
+  font-size: 25px;
   text-decoration: none;
   color: #555555;
 }
@@ -653,6 +655,7 @@ footer a:hover {
   /* font-size: 4vw; */
   color: #092d5b;
   padding-top: 10px;
+  text-align: center;
 }
 
 .login-card form {
@@ -662,6 +665,10 @@ footer a:hover {
 }
 
 .login-card input {
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding: 5px;
   margin-bottom: 10px;
 }
@@ -677,30 +684,44 @@ footer a:hover {
 }
 
 .login-button {
-  width: 50%;
+  width: 100px;
 }
 
 .sign-up-card {
   margin: auto;
-  margin-top: 30px;
-  padding: 5%;
-  width: 45%;
-  background-color: #ffffff;
-  border-radius: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-top: 2%;
+  /* width: 50vw; */
+  text-align: center;
+}
+.sign-up-button {
+  width: 100%;
+  text-align: center;
 }
 
 .sign-up-card h2 {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+.sign-up-container h2 {
   /* font-size: 2vw; */
   font-weight: 700;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
+  /* padding-left: 25px; */
 }
 
 .sign-up-container {
   height: 100vh;
   width: 100vw;
   background: linear-gradient(to top, #092d58, #0270bf);
-  text-align: center;
-  padding-top: 20%;
+  /* text-align: center; */
+  padding-top: 10%;
+  padding-bottom: 10%;
+  /* text-align: center; */
 }
 
 .admin-container {
@@ -880,6 +901,8 @@ footer a:hover {
     text-align: center;
   }
   footer {
+    position: fixed;
+    right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -902,6 +925,9 @@ footer a:hover {
 
   .hole-info-container {
     max-width: 95%;
+  }
+  .login-card {
+    width: 95vw;
   }
 }
 .calender-button {
@@ -938,5 +964,12 @@ footer a:hover {
     padding-bottom: 0.5em;
     padding-left: 0.75em;
     padding-right: 0.75em;
+  }
+  .sign-up-container h2 {
+    padding-top: 10px;
+    font-size: 24px;
+  }
+  .exit-icon {
+    font-size: 20px;
   }
 }
