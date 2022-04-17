@@ -684,6 +684,96 @@ footer a:hover {
   padding-top: 20%;
 }
 
+.admin-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, #092d58, #0270bf);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.admin-container input {
+  background-color: #f6faff;
+}
+
+.admin-container button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.admin-card {
+  background-color: #ffffff;
+  width: 80%;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+.admin-card h3 {
+  font-size: 2vw;
+}
+
+.admin-header img {
+  width: 20%;
+  padding-right: 30px;
+}
+
+.admin-header-logo {
+  display: inline-block;
+  font-family: "lora", sans-serif;
+  font-size: 3.5vw;
+  color: #092d5b;
+}
+
+.admin-header-txt {
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.member-control span,
+.search-header,
+.user-search-results {
+  font-size: 1vw;
+}
+
+.delete {
+  color: #ff0000;
+}
+
+.user-search-results {
+  background-color: #dddddd;
+}
+
+.search-results {
+  border-bottom: 1px solid #333333;
+  padding: 2px;
+}
+
+.pricing-control input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.pricing-type {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}
+
+.pricing-card {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom-misc {
+  padding-top: 20px;
+}
+
 @media (max-width: 990px) {
   .Navigation {
     display: none;
