@@ -1,11 +1,13 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 const Login = () => {
+  const history = useHistory();
   return (
     <section className="sign-up-container">
       <div className="login-card">
         <div className="float-end d-inline p-2">
-          <a className="exit-icon" href="#">
+          <a className="exit-icon" onClick={() => history.goBack()}>
             <i className="fa-solid fa-xmark"></i>
           </a>
         </div>
