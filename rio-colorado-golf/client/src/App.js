@@ -11,6 +11,7 @@ import Course from "./pages/Course";
 import Events from "./pages/Events";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route exact path="/events" component={Events} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/contact" component={Contact} />
           </Switch>
         </div>
         <Footer />
