@@ -264,7 +264,7 @@ function Holes() {
             <span className="gold-tee"></span> {course.goldTee}
           </div>
         </div>
-        <div className="col-md-7">
+        <div className="col-md-7 hole-img-container">
           <img src={course.image} alt="Hole {course.name}" />
         </div>
       </div>

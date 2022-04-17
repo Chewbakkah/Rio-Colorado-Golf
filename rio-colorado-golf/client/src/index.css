@@ -531,6 +531,7 @@ footer a:hover {
 .hole-info-container {
   background-color: #f6faff;
   padding: 5%;
+  max-width: 75%;
 }
 
 .hole-info-container h4 {
@@ -614,7 +615,12 @@ footer a:hover {
 }
 
 .hole-info-container img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 80vh;
+}
+
+.hole-img-container {
+  text-align: center;
 }
 
 .tournament-results {
@@ -892,6 +898,10 @@ footer a:hover {
     color: white;
     font-size: 5vw;
     margin: 5px;
+  }
+
+  .hole-info-container {
+    max-width: 95%;
   }
 }
 .calender-button {
