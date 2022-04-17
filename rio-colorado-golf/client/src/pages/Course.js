@@ -5,14 +5,14 @@ import Holes from "../components/Course";
 const Course = () => {
   return (
     <section>
-      <div class="course-img">
-        <img class="img-fluid w-100 img-shadow" src={courseImg} />
+      <div className="course-img">
+        <img className="img-fluid w-100 img-shadow" src={courseImg} />
       </div>
-      <section class="course-container">
-        <div class="course-header">
+      <section className="course-container">
+        <div className="course-header">
           <h2>THE COURSE</h2>
         </div>
-        <div class="course-text">
+        <div className="course-text">
           The front nine is a skillfully sculpted, prairie links design, with
           holes playing from every direction to ensure the Texas coastal winds
           will play a significant role in your game. Fairway and greenside
@@ -30,22 +30,22 @@ const Course = () => {
           don't be suprised to spot plenty of wildlife including deer, ducks,
           rabbits, cranes, hawks and alligators.
         </div>
-        <div class="course-summary center-text container-flui">
+        <div className="course-summary center-text container-flui">
           <h2>
             GARY PLAYER DESIGNED
             <br />
             18-HOLE CHAMPIONSHIP COURSE
           </h2>
-          <div class="container-fluid">
-            <div class="row course-stats">
-              <div class="col-sm-3 center-text">PAR 72</div>
-              <div class="col-sm-3 center-text">6855 YARDS</div>
-              <div class="col-sm-3 center-text">SLOPE: 127</div>
-              <div class="col-sm-3 center-text">RATING: 73.1</div>
+          <div className="container-fluid">
+            <div className="row course-stats">
+              <div className="col-sm-3 center-text">PAR 72</div>
+              <div className="col-sm-3 center-text">6855 YARDS</div>
+              <div className="col-sm-3 center-text">SLOPE: 127</div>
+              <div className="col-sm-3 center-text">RATING: 73.1</div>
             </div>
           </div>
-          <div class="course-amenities">
-            <button class="btn btn-shadow">
+          <div className="course-amenities">
+            <button className="btn btn-shadow">
               <a href="">VIEW AMENITIES</a>
             </button>
           </div>
