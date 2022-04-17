@@ -1,9 +1,13 @@
 import React from "react";
 import Directions from "../components/Directions";
+import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
 
 const Contact = () => {
   return (
     <section>
+      <div class="hole-img">
+        <img className="img-fluid w-100 img-shadow" src={holeImage} />
+      </div>
       <section className="intro-container">
         <div className="intro-welcome">
           <h2>CONTACT INFORMATION</h2>
