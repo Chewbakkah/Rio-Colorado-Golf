@@ -28,7 +28,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <section class="admin-footer">
+        <section className="admin-footer">
           <div className="float-end">
             <Link to="/admin">ADMIN</Link>
           </div>
