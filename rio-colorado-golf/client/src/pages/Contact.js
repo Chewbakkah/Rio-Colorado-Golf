@@ -1,7 +1,32 @@
-import React from "react";
+import { useQuery } from "@apollo/client";
+import React, { useState, useEffect } from "react";
 import Directions from "../components/Directions";
+import { QUERY_ALL_SERVICES } from "../utils/queries";
 
 const Contact = () => {
+  const [pricingState, setPricingState] = useState();
+
+  const { data } = useQuery(QUERY_ALL_SERVICES);
+
+  let services;
+
+  if (data) {
+    services = data.services;
+  }
+
+  // const handlePricing = async () => {
+  //   try {
+  //     const pricing = await getServices();
+  //     setPricingState(pricing.data.services);
+  //   } catch (e) {
+  //     console.error(e);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   handlePricing();
+  // }, []);
+
   return (
     <section>
       <section class="intro-container">
@@ -31,6 +56,14 @@ const Contact = () => {
             <div class="col-md-6">
               <h6 class="pricing-title text-center">WEEKDAY</h6>
               <div class="text-center pricing_r_align pricing_margin">
+                {services.map((service) => {
+                  console.log(service);
+                  if (service.priceTimeFrame === "Weekday") {
+                    return `<p>${service.service}: $<span id="weekday-regular">${service.price}</span></p><br />`;
+                  } else {
+                    return null;
+                  }
+                })}
                 <p>
                   REGULAR: $<span id="weekday-regular">34</span>
                   <br />
