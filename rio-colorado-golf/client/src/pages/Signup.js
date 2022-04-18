@@ -1,6 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
+import { useMutation } from "@apollo/client";
+import { ADD_USER } from "../utils/mutations";
+
+import Auth from "../utils/auth";
 
 const Signup = () => {
+  const [formState, setFormState] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
+  });
+  const [addUser, { error }] = useMutation(ADD_USER);
+
+  // update state based on form input changes
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
+
+  // submit form
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      console.log("submit");
+      const { data } = await addUser({
+        variables: { ...formState },
+      });
+      console.log(data);
+      Auth.login(data.addUser.token);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
   return (
     <section class="sign-up-container">
       <div class="login-card container row">
@@ -12,7 +50,7 @@ const Signup = () => {
           </div>
         </div>
         <h2>Rio Colorado</h2>
-        <form>
+        <form onSubmit={handleFormSubmit}>
           <div class="form-row">
             <div class="col-7">
               <span class="login-text">FIRST NAME:</span>
@@ -20,38 +58,42 @@ const Signup = () => {
                 class="form-input"
                 type="text"
                 placeholder="ENTER YOUR FIRST NAME"
-                name="signup-first-name"
+                name="firstName"
                 id="signup-first-name"
                 size="100%"
+                onChange={handleChange}
               />
               <span class="login-text">LAST NAME:</span>
               <input
                 class="form-input"
                 type="text"
                 placeholder="ENTER YOUR LAST NAME"
-                name="signup-last-name"
+                name="lastName"
                 id="signup-last-name"
                 size="40"
+                onChange={handleChange}
               />
               <span class="login-text">EMAIL:</span>
               <input
                 class="form-input"
                 type="text"
                 placeholder="ENTER YOUR EMAIL ADDRESS"
-                name="signup-email"
+                name="email"
                 id="signup-email"
                 size="40"
+                onChange={handleChange}
               />
               <span class="login-text">PASSWORD:</span>
               <input
                 class="form-input"
                 type="text"
                 placeholder="ENTER YOUR EMAIL PASSWORD"
-                name="signup-password"
+                name="password"
                 id="signup-password"
                 size="40"
+                onChange={handleChange}
               />
-              <span class="login-text">CONFIRM PASSWORD:</span>
+              {/* <span class="login-text">CONFIRM PASSWORD:</span>
               <input
                 class="form-input"
                 type="text"
@@ -59,17 +101,18 @@ const Signup = () => {
                 name="confirm-signup-password"
                 id="confirm-signup-password"
                 size="40"
-              />
+              /> */}
               <div class="row justify-content-center">
                 <div class="col-md-6 offset-md-3">
                   <button class="btn btn-shadow login-button" type="submit">
-                    <a href="">LOGIN</a>
+                    LOGIN
                   </button>
                 </div>
               </div>
             </div>
           </div>
         </form>
+        {error && <div>Signup failed</div>}
       </div>
     </section>
   );

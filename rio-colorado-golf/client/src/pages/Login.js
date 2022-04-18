@@ -11,15 +11,19 @@ const Login = () => {
   const formSubmission = async (event) => {
     event.preventDefault();
     try {
+      console.log("form submit");
+
       const loginResponse = await login({
         variables: {
           email: inputState.email,
           password: inputState.password,
         },
       });
-      console.log(loginResponse);
-      // const token = loginResponse.data.login.token;
-      // Auth.login(token);
+
+      const token = loginResponse.data.login.token;
+      console.log(token);
+      //console.log(loginResponse);
+      Auth.login(token);
     } catch (e) {
       console.log(e);
     }
@@ -50,7 +54,7 @@ const Login = () => {
             class="form-input"
             type="text"
             placeholder="ENTER YOUR EMAIL ADDRESS"
-            name="login-email"
+            name="email"
             id="login-email"
             onChange={stateChange}
             size="40"
@@ -60,7 +64,7 @@ const Login = () => {
             class="form-input"
             type="text"
             placeholder="ENTER YOUR EMAIL PASSWORD"
-            name="login-password"
+            name="password"
             id="login-password"
             onChange={stateChange}
             size="40"
@@ -73,7 +77,7 @@ const Login = () => {
             ) : null}
             <div class="col-md-6 offset-md-3">
               <button class="btn-shadow login-button" type="submit">
-                <a href="">LOGIN</a>
+                Login
               </button>
             </div>
           </div>
