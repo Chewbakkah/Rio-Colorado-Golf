@@ -11,8 +11,6 @@ const Login = () => {
   const formSubmission = async (event) => {
     event.preventDefault();
     try {
-      console.log("form submit");
-
       const loginResponse = await login({
         variables: {
           email: inputState.email,
@@ -21,8 +19,6 @@ const Login = () => {
       });
 
       const token = loginResponse.data.login.token;
-      console.log(token);
-      //console.log(loginResponse);
       Auth.login(token);
     } catch (e) {
       console.log(e);

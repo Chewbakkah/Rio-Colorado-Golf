@@ -11,6 +11,9 @@ const Signup = () => {
     email: "",
     password: "",
   });
+  const [confirmPassState, setConfirmPassState] = useState({
+    confirmPassword: "",
+  });
   const [addUser, { error }] = useMutation(ADD_USER);
 
   // update state based on form input changes
@@ -22,21 +25,31 @@ const Signup = () => {
       [name]: value,
     });
   };
+  const handleConfPass = (event) => {
+    const { name, value } = event.target;
+
+    setConfirmPassState({
+      ...confirmPassState,
+      [name]: value,
+    });
+  };
 
   // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
+    // if (formState.password == confirmPassState) {
     try {
-      console.log("submit");
       const { data } = await addUser({
         variables: { ...formState },
       });
-      console.log(data);
       Auth.login(data.addUser.token);
     } catch (e) {
       console.error(e);
     }
+    // } else {
+    //   alert("The passwords you have entered do not match");
+    // }
   };
 
   return (
@@ -98,9 +111,10 @@ const Signup = () => {
                 class="form-input"
                 type="text"
                 placeholder="ENTER YOUR EMAIL PASSWORD"
-                name="confirm-signup-password"
+                name="confirmPassword"
                 id="confirm-signup-password"
                 size="40"
+                onChange={handleConfPass}
               /> */}
               <div class="row justify-content-center">
                 <div class="col-md-6 offset-md-3">
