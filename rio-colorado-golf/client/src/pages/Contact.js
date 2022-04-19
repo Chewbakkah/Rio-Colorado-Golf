@@ -1,5 +1,8 @@
-import React from "react";
+import { useQuery } from "@apollo/client";
+import React, { useState, useEffect } from "react";
 import Directions from "../components/Directions";
+import { QUERY_ALL_SERVICES } from "../utils/queries";
+
 import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
 
 const Contact = () => {
