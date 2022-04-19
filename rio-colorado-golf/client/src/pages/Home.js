@@ -59,14 +59,14 @@ const Home = () => {
             </div> */}
           </div>
         </section>
-        <div className="missing-img">
+        <div className="intro-img">
           <img className="img-fluid w-100" src={greenImage} />
         </div>
-        <section className="missing-container">
-          <div className="missing-header">
+        <section className="intro-container">
+          <div className="intro-welcome">
             <h2>SEE WHAT YOU'RE MISSING</h2>
           </div>
-          <div className="missing-text">
+          <div className="intro-text">
             Bay City's premier 18-hole public golf course features a front nine
             characterized by it's rolling hills and open vistas, and a
             tree-lined back nine that weaves through the Colorado river
@@ -79,11 +79,11 @@ const Home = () => {
             </button>
           </div>
         </section>
-        <section className="missing-container">
-          <div className="missing-header">
+        <section className="intro-container">
+          <div className="intro-welcome">
             <h2>INFORMATION</h2>
           </div>
-          <div className="missing-text">
+          <div className="intro-text">
             Rio Colorado Golf Course is located south of Bay City on FM2668. Our
             staff of professionals will gladly assist with the planning and
             hosting of your private event or corporate outing. Your group is
@@ -94,7 +94,6 @@ const Home = () => {
             group.
           </div>
         </section>
-        
       </section>
       <Directions />
     </main>

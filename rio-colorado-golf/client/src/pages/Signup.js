@@ -122,7 +122,7 @@ const Signup = () => {
               <div className="row justify-content-center">
                 <div className="sign-up-button">
                   <button className="btn btn-shadow login-button" type="submit">
-                    LOGIN
+                    <span class="btn-text">LOGIN</span>
                   </button>
                 </div>
               </div>
