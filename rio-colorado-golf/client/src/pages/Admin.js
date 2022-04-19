@@ -1,9 +1,47 @@
 import React from "react";
 import RioLogo from "../assets/img/riocolo-logo.png";
 import Auth from "../utils/auth";
+import { useQuery, useMutation } from "@apollo/client";
+import { QUERY_ALL_SERVICES } from "../utils/queries";
+import { UPDATE_SERVICE } from "../utils/mutations";
 
 const Admin = () => {
   const user = Auth.getProfile();
+
+  const { loading, error, data } = useQuery(QUERY_ALL_SERVICES);
+  const [updateServices, { error1 }] = useMutation(UPDATE_SERVICE);
+
+  if (loading) return "Loading";
+  if (error) return `error ${error}`;
+
+  let services;
+
+  if (data) {
+    services = data.services;
+  }
+
+  // const formSubmission = async (event) => {
+  //   event.preventDefault();
+  // };
+
+  const updatePriceDb = async (event) => {
+    try {
+      const updatePrice = await updateServices({
+        variables: {
+          id: event.target.id,
+          price: event.target.value,
+        },
+      });
+
+      alert(`Price as been Updated to ${event.target.value}`);
+
+      return updatePrice;
+    } catch (e) {
+      console.log(event.target.id);
+      console.log(event.target.value);
+      console.log(e);
+    }
+  };
 
   if (user.data.role === "admin") {
     return (
@@ -99,10 +137,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[0].price}
                     name="day-pricing-regular"
-                    id="day-pricing-regular"
+                    id={services[0]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
                 <div class="col-md-2">
@@ -110,10 +149,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[1].price}
                     name="day-pricing-sr-jr"
-                    id="day-pricing-sr-jr"
+                    id={services[1]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
                 <div class="col-md-2">
@@ -121,10 +161,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[2].price}
                     name="day-pricing-9"
-                    id="day-pricing-9"
+                    id={services[2]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
                 <div class="col-md-2">
@@ -132,10 +173,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[3].price}
                     name="day-pricing-twilight"
-                    id="day-pricing-twilight"
+                    id={services[3]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
                 <div class="col-md-2">
@@ -143,10 +185,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[4].price}
                     name="day-pricing-walking"
-                    id="day-pricing-walking"
+                    id={services[4]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
               </div>
@@ -159,10 +202,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[5].price}
                     name="end-pricing-regular"
-                    id="end-pricing-regular"
+                    id={services[5]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
                 <div class="col-md-2">
@@ -170,10 +214,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[6].price}
                     name="end-pricing-sr-jr"
-                    id="end-pricing-sr-jr"
+                    id={services[6]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
                 <div class="col-md-2">
@@ -181,10 +226,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[7].price}
                     name="end-pricing-9"
-                    id="end-pricing-9"
+                    id={services[7]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
                 <div class="col-md-2">
@@ -192,10 +238,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[8].price}
                     name="end-pricing-twilight"
-                    id="end-pricing-twilight"
+                    id={services[8]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
                 <div class="col-md-2">
@@ -203,10 +250,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[9].price}
                     name="end-pricing-walking"
-                    id="end-pricing-walking"
+                    id={services[9]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
               </div>
@@ -219,10 +267,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[10].price}
                     name="misc-pricing-single"
-                    id="misc-pricing-single"
+                    id={services[10]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
                 <div class="col-md-4">
@@ -230,10 +279,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[11].price}
                     name="misc-pricing-9"
-                    id="misc-pricing-9"
+                    id={services[11]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
                 <div class="col-md-4">
@@ -241,10 +291,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[12].price}
                     name="misc-pricing-18"
-                    id="misc-pricing-18"
+                    id={services[12]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
               </div>
@@ -254,7 +305,7 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder="XX"
                     name="misc-pricing-time"
                     id="misc-pricing-time"
                     size="2"
@@ -265,10 +316,11 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[13].price}
                     name="misc-pricing-sm"
-                    id="misc-pricing-sm"
+                    id={services[13]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
                 <div class="col-md-4">
@@ -276,17 +328,18 @@ const Admin = () => {
                   <input
                     class="form-input pricing"
                     type="text"
-                    placeholder="xx"
+                    placeholder={services[14].price}
                     name="misc-pricing-lg"
-                    id="misc-pricing-lg"
+                    id={services[14]._id}
                     size="2"
+                    onBlur={updatePriceDb}
                   />
                 </div>
               </div>
             </div>
-            <button class="btn btn-shadow pricing-button" type="submit">
+            {/* <button class="btn btn-shadow pricing-button" type="submit">
               <a href="">UPDATE</a>
-            </button>
+            </button> */}
           </form>
         </div>
       </section>
