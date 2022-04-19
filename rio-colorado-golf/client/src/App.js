@@ -10,7 +10,6 @@ import { setContext } from "@apollo/client/link/context";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Directions from "./components/Directions";
 
 import Home from "./pages/Home";
 import Amenities from "./pages/Amenities";
@@ -22,44 +21,47 @@ import Contact from "./pages/Contact";
 import Admin from "./pages/Admin";
 
 const httpLink = createHttpLink({
-  uri: "/graphql",
+  uri: "http://localhost:3001/graphql",
 });
 
-const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem("id_token");
-  return {
-    headers: {
-      ...headers,
-      authorization: token ? `Bearer ${token}` : "",
-    },
-  };
-});
+// const authLink = setContext((_, { headers }) => {
+//   const token = localStorage.getItem("id_token");
+//   return {
+//     headers: {
+//       ...headers,
+//       authorization: token ? `Bearer ${token}` : "",
+//     },
+//   };
+// });
 
 const client = new ApolloClient({
-  link: authLink.concat(httpLink),
+  // link: authLink.concat(httpLink),
+  link: httpLink,
   cache: new InMemoryCache(),
 });
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Nav />
+    <ApolloProvider client={client}>
+      <Router>
         <div>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/course" component={Course} />
-            <Route exact path="/amenities" component={Amenities} />
-            <Route exact path="/events" component={Events} />
-            <Route exact path="/signup" component={Signup} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/admin" component={Admin} />
-          </Switch>
+          <Nav />
+          <div>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/course" component={Course} />
+              <Route exact path="/amenities" component={Amenities} />
+              <Route exact path="/events" component={Events} />
+              <Route exact path="/signup" component={Signup} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/admin" component={Admin} />
+            </Switch>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </Router>
+      </Router>
+    </ApolloProvider>
   );
 }
 

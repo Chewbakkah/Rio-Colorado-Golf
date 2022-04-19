@@ -1,5 +1,6 @@
 const { gql } = require("apollo-server-express");
 
+//adduser had to be updated, role removed
 const typeDefs = gql`
   type User {
     _id: ID!
@@ -33,8 +34,7 @@ const typeDefs = gql`
       lastName: String!
       email: String!
       password: String!
-      role: String
-    ): User
+    ): Auth
     updateUser(
       _id: ID!
       firstName: String
