@@ -33,7 +33,7 @@ const Admin = () => {
         },
       });
 
-      alert(`Price as been Updated to ${event.target.value}`);
+      alert(`Price has been Updated to ${event.target.value}`);
 
       return updatePrice;
     } catch (e) {
