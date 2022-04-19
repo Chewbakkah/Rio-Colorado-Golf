@@ -45,16 +45,20 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/course" component={Course} />
-            <Route exact path="/amenities" component={Amenities} />
-            <Route exact path="/events" component={Events} />
-            <Route exact path="/signup" component={Signup} />
-            <Route exact path="/login" component={Login} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/admin" component={Admin} />
-          </Switch>
+          <Nav />
+          <div>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/course" component={Course} />
+              <Route exact path="/amenities" component={Amenities} />
+              <Route exact path="/events" component={Events} />
+              <Route exact path="/signup" component={Signup} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/admin" component={Admin} />
+            </Switch>
+          </div>
+          <Footer />
         </div>
       </Router>
     </ApolloProvider>

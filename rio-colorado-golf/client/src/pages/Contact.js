@@ -8,8 +8,10 @@ import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
 const Contact = () => {
   const [pricingState, setPricingState] = useState();
 
-  const { data } = useQuery(QUERY_ALL_SERVICES);
+  const { loading, error, data } = useQuery(QUERY_ALL_SERVICES);
 
+  if (loading) return "Loading";
+  if (error) return `error ${error}`;
   let services;
 
   if (data) {
@@ -71,12 +73,12 @@ const Contact = () => {
                 <p>
                   REGULAR: <span id="weekday-regular">{services[0].price}</span>
                   <br />
-                  JR/SR(62+):{" "}
+                  JR/SR(62+):
                   <span id="weekday-regular">{services[1].price}</span>
                   <br />
                   9-HOLES: <span id="weekday-regular">{services[2].price}</span>
                   <br />
-                  TWILIGHT:{" "}
+                  TWILIGHT:
                   <span id="weekday-regular">{services[3].price}</span>
                   <br />
                   WALKING: <span id="weekday-regular">{services[4].price}</span>
@@ -89,12 +91,12 @@ const Contact = () => {
                 <p>
                   REGULAR: <span id="weekday-regular">{services[5].price}</span>
                   <br />
-                  JR/SR(62+):{" "}
+                  JR/SR(62+):
                   <span id="weekday-regular">{services[6].price}</span>
                   <br />
                   9-HOLES: <span id="weekday-regular">{services[7].price}</span>
                   <br />
-                  TWILIGHT:{" "}
+                  TWILIGHT:
                   <span id="weekday-regular">{services[8].price}</span>
                   <br />
                   WALKING: <span id="weekday-regular">{services[9].price}</span>
@@ -109,19 +111,19 @@ const Contact = () => {
               <h6 className="twi_pricing_title text-center">TWILIGHT: 3 PM</h6>
               <div className="text-center pricing_r_align pricing_twi_margin">
                 <p>
-                  SINGLE/3-SOME:{" "}
+                  SINGLE/3-SOME:
                   <span id="weekday-regular">{services[10].price}</span>
                   <br />
-                  REPLAY 9 HOLES:{" "}
+                  REPLAY 9 HOLES:
                   <span id="weekday-regular">{services[11].price}</span>
                   <br />
-                  REPLAY 18 HOLES:{" "}
+                  REPLAY 18 HOLES:
                   <span id="weekday-regular">{services[12].price}</span>
                   <br />
-                  RANGE SMALL:{" "}
+                  RANGE SMALL:
                   <span id="weekday-regular">{services[13].price}</span>
                   <br />
-                  REPLAY LARGE:{" "}
+                  REPLAY LARGE:
                   <span id="weekday-regular">{services[14].price}</span>
                 </p>
               </div>
