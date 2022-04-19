@@ -71,9 +71,9 @@ const Login = () => {
                 <p>The login information you have entered is incorrect.</p>
               </div>
             ) : null}
-            <div class="col-md-6 offset-md-3">
-              <button class="btn-shadow login-button" type="submit">
-                Login
+            <div class="sign-up-button">
+              <button class="btn btn-shadow" type="submit">
+                <span class="btn-text">LOGIN</span>
               </button>
             </div>
           </div>

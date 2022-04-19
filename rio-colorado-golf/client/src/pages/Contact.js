@@ -4,6 +4,7 @@ import Directions from "../components/Directions";
 import { QUERY_ALL_SERVICES } from "../utils/queries";
 
 import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
+import rioGreenImage from "../../src/assets/img/riocolo-green.jpg";
 
 const Contact = () => {
   const [pricingState, setPricingState] = useState();
@@ -56,7 +57,7 @@ const Contact = () => {
         </div>
       </section>
       <section className="missing-container">
-        <div className="missing-header">
+        <div className="intro-welcome">
           <h2>PRICING</h2>
         </div>
         <div class="container">
