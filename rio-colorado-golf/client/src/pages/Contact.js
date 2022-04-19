@@ -56,24 +56,25 @@ const Contact = () => {
             <div class="col-md-6">
               <h6 class="pricing-title text-center">WEEKDAY</h6>
               <div class="text-center pricing_r_align pricing_margin">
-                {services.map((service) => {
-                  console.log(service);
+                {/* {services.map((service) => {
                   if (service.priceTimeFrame === "Weekday") {
-                    return `<p>${service.service}: $<span id="weekday-regular">${service.price}</span></p><br />`;
+                    return `<p>${service.service}: <span id="weekday-regular">${service.price}</span></p><br />`;
                   } else {
                     return null;
                   }
-                })}
+                })} */}
                 <p>
-                  REGULAR: $<span id="weekday-regular">34</span>
+                  REGULAR: <span id="weekday-regular">{services[0].price}</span>
                   <br />
-                  JR/SR(62+): $<span id="weekday-regular">29</span>
+                  JR/SR(62+):{" "}
+                  <span id="weekday-regular">{services[1].price}</span>
                   <br />
-                  9-HOLES: $<span id="weekday-regular">24</span>
+                  9-HOLES: <span id="weekday-regular">{services[2].price}</span>
                   <br />
-                  TWILIGHT: $<span id="weekday-regular">28</span>
+                  TWILIGHT:{" "}
+                  <span id="weekday-regular">{services[3].price}</span>
                   <br />
-                  WALKING PHOENIX: $<span id="weekday-regular">20</span>
+                  WALKING: <span id="weekday-regular">{services[4].price}</span>
                 </p>
               </div>
             </div>
@@ -81,15 +82,17 @@ const Contact = () => {
               <h6 class="pricing-title text-center">WEEKEND/HOLIDAYS</h6>
               <div class="text-center pricing_r_align pricing_margin">
                 <p>
-                  REGULAR: $<span id="weekday-regular">44</span>
+                  REGULAR: <span id="weekday-regular">{services[5].price}</span>
                   <br />
-                  JR/SR(62+): $<span id="weekday-regular">33</span>
+                  JR/SR(62+):{" "}
+                  <span id="weekday-regular">{services[6].price}</span>
                   <br />
-                  9-HOLES: $<span id="weekday-regular">29</span>
+                  9-HOLES: <span id="weekday-regular">{services[7].price}</span>
                   <br />
-                  TWILIGHT: $<span id="weekday-regular">33</span>
+                  TWILIGHT:{" "}
+                  <span id="weekday-regular">{services[8].price}</span>
                   <br />
-                  WALKING PHOENIX: $<span id="weekday-regular">25</span>
+                  WALKING: <span id="weekday-regular">{services[9].price}</span>
                 </p>
               </div>
             </div>
@@ -101,15 +104,20 @@ const Contact = () => {
               <h6 class="twi_pricing_title text-center">TWILIGHT: 3 PM</h6>
               <div class="text-center pricing_r_align pricing_twi_margin">
                 <p>
-                  SINGLE/3-SOME: $<span id="weekday-regular">5</span>
+                  SINGLE/3-SOME:{" "}
+                  <span id="weekday-regular">{services[10].price}</span>
                   <br />
-                  REPLAY 9 HOLES: $<span id="weekday-regular">12</span>
+                  REPLAY 9 HOLES:{" "}
+                  <span id="weekday-regular">{services[11].price}</span>
                   <br />
-                  REPLAY 18 HOLES: $<span id="weekday-regular">17</span>
+                  REPLAY 18 HOLES:{" "}
+                  <span id="weekday-regular">{services[12].price}</span>
                   <br />
-                  RANGE SMALL: $<span id="weekday-regular">6</span>
+                  RANGE SMALL:{" "}
+                  <span id="weekday-regular">{services[13].price}</span>
                   <br />
-                  REPLAY LARGE: $<span id="weekday-regular">9</span>
+                  REPLAY LARGE:{" "}
+                  <span id="weekday-regular">{services[14].price}</span>
                 </p>
               </div>
             </div>
