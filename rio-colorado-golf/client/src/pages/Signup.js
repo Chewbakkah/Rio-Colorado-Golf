@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
 
@@ -25,6 +26,7 @@ const Signup = () => {
       [name]: value,
     });
   };
+
   const handleConfPass = (event) => {
     const { name, value } = event.target;
 
@@ -52,23 +54,25 @@ const Signup = () => {
     // }
   };
 
+  const history = useHistory();
+
   return (
-    <section class="sign-up-container">
-      <div class="login-card container row">
-        <div class="row justify-content-end">
-          <div class="col-md-2">
-            <a class="exit-icon" href="#">
-              <i class="fa-solid fa-xmark"></i>
-            </a>
-          </div>
+    <section className="sign-up-container">
+      <div className="login-card">
+        <div className="float-end d-inline p-2">
+          <a className="exit-icon" onClick={() => history.goBack()}>
+            <i className="fa-solid fa-xmark"></i>
+          </a>
         </div>
-        <h2>Rio Colorado</h2>
+
+        <h2 class="d-inline">Rio Colorado</h2>
+
         <form onSubmit={handleFormSubmit}>
-          <div class="form-row">
-            <div class="col-7">
-              <span class="login-text">FIRST NAME:</span>
+          <div className="form-row">
+            <div>
+              <span className="login-text">FIRST NAME:</span>
               <input
-                class="form-input"
+                className="form-input "
                 type="text"
                 placeholder="ENTER YOUR FIRST NAME"
                 name="firstName"
@@ -76,9 +80,9 @@ const Signup = () => {
                 size="100%"
                 onChange={handleChange}
               />
-              <span class="login-text">LAST NAME:</span>
+              <span className="login-text">LAST NAME:</span>
               <input
-                class="form-input"
+                className="form-input"
                 type="text"
                 placeholder="ENTER YOUR LAST NAME"
                 name="lastName"
@@ -86,9 +90,9 @@ const Signup = () => {
                 size="40"
                 onChange={handleChange}
               />
-              <span class="login-text">EMAIL:</span>
+              <span className="login-text">EMAIL:</span>
               <input
-                class="form-input"
+                className="form-input"
                 type="text"
                 placeholder="ENTER YOUR EMAIL ADDRESS"
                 name="email"
@@ -96,9 +100,9 @@ const Signup = () => {
                 size="40"
                 onChange={handleChange}
               />
-              <span class="login-text">PASSWORD:</span>
+              <span className="login-text">PASSWORD:</span>
               <input
-                class="form-input"
+                className="form-input"
                 type="text"
                 placeholder="ENTER YOUR EMAIL PASSWORD"
                 name="password"
@@ -108,17 +112,16 @@ const Signup = () => {
               />
               {/* <span class="login-text">CONFIRM PASSWORD:</span>
               <input
-                class="form-input"
+                className="form-input"
                 type="text"
                 placeholder="ENTER YOUR EMAIL PASSWORD"
                 name="confirmPassword"
                 id="confirm-signup-password"
                 size="40"
-                onChange={handleConfPass}
-              /> */}
-              <div class="row justify-content-center">
-                <div class="col-md-6 offset-md-3">
-                  <button class="btn btn-shadow login-button" type="submit">
+              />  */}
+              <div className="row justify-content-center">
+                <div className="sign-up-button">
+                  <button className="btn btn-shadow login-button" type="submit">
                     LOGIN
                   </button>
                 </div>

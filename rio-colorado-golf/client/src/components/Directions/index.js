@@ -2,9 +2,9 @@ import React from "react";
 
 function Directions() {
   return (
-    <div class="container directions">
-      <div class="row">
-        <div class="col-lg-8">
+    <div className="container directions">
+      <div className="row">
+        <div className="col-lg-8">
           <iframe
             className="map"
             id="gmap_canvas"
@@ -15,7 +15,7 @@ function Directions() {
             marginWidth="0"
           ></iframe>
         </div>
-        <div class="col-lg-4">
+        <div className="col-lg-4">
           <div>
             <div>
               <h4>ADDRESS</h4>
@@ -35,8 +35,8 @@ function Directions() {
               <br />
               7:00AM - 5:30PM
             </div>
-            <div class="directions-book-now">
-              <button class="btn btn-shadow">
+            <div className="directions-book-now">
+              <button className="btn btn-shadow">
                 <a href="">BOOK ONLINE</a>
               </button>
             </div>

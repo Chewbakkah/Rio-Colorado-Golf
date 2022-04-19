@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import Directions from "../components/Directions";
 import { QUERY_ALL_SERVICES } from "../utils/queries";
 
+import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
+
 const Contact = () => {
   const [pricingState, setPricingState] = useState();
 
@@ -29,11 +31,14 @@ const Contact = () => {
 
   return (
     <section>
-      <section class="intro-container">
-        <div class="intro-welcome">
+      <div class="hole-img">
+        <img className="img-fluid w-100 img-shadow" src={holeImage} />
+      </div>
+      <section className="intro-container">
+        <div className="intro-welcome">
           <h2>CONTACT INFORMATION</h2>
         </div>
-        <div class="intro-text">
+        <div className="intro-text">
           Our staff of professionals are ready and eager to assist with the
           planning and hosting of your private event or corporate outing. Rio
           Colorado has the facilities to customize your event to exceed your
@@ -41,14 +46,14 @@ const Contact = () => {
           post-event scoring, to even providing dinner, we are here to serve you
           and make your next game one to remember.
         </div>
-        <div class="intro-book-now">
-          <button class="btn btn-shadow">
+        <div className="intro-book-now">
+          <button className="btn btn-shadow">
             <a href="">BOOK ONLINE</a>
           </button>
         </div>
       </section>
-      <section class="missing-container">
-        <div class="missing-header">
+      <section className="missing-container">
+        <div className="missing-header">
           <h2>PRICING</h2>
         </div>
         <div class="container">
@@ -78,9 +83,9 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <div class="col-md-6">
-              <h6 class="pricing-title text-center">WEEKEND/HOLIDAYS</h6>
-              <div class="text-center pricing_r_align pricing_margin">
+            <div className="col-md-6">
+              <h6 className="pricing-title text-center">WEEKEND/HOLIDAYS</h6>
+              <div className="text-center pricing_r_align pricing_margin">
                 <p>
                   REGULAR: <span id="weekday-regular">{services[5].price}</span>
                   <br />
@@ -98,11 +103,11 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h6 class="twi_pricing_title text-center">TWILIGHT: 3 PM</h6>
-              <div class="text-center pricing_r_align pricing_twi_margin">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <h6 className="twi_pricing_title text-center">TWILIGHT: 3 PM</h6>
+              <div className="text-center pricing_r_align pricing_twi_margin">
                 <p>
                   SINGLE/3-SOME:{" "}
                   <span id="weekday-regular">{services[10].price}</span>

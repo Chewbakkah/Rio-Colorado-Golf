@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useMutation } from "@apollo/client";
+import { useHistory } from "react-router-dom";
 import { LOGIN_USER } from "../utils/mutations";
 import Auth from "../utils/auth";
 
@@ -33,15 +34,14 @@ const Login = () => {
     });
   };
 
+  const history = useHistory();
   return (
-    <section class="login-container">
-      <div class="login-card container">
-        <div class="row justify-content-end">
-          <div class="col-md-2">
-            <a class="exit-icon" href="#">
-              <i class="fa-solid fa-xmark"></i>
-            </a>
-          </div>
+    <section className="sign-up-container">
+      <div className="login-card">
+        <div className="float-end d-inline p-2">
+          <a className="exit-icon" onClick={() => history.goBack()}>
+            <i className="fa-solid fa-xmark"></i>
+          </a>
         </div>
         <h2>Rio Colorado</h2>
         <form onSubmit={formSubmission}>
@@ -79,9 +79,11 @@ const Login = () => {
           </div>
         </form>
       </div>
-      <div class="sign-up-card">
+
+      <div className="sign-up-card">
         <h2>NOT CURRENTLY A MEMBER?</h2>
-        <button class="btn-shadow">
+
+        <button className="btn btn-shadow">
           <a href="/signup">SIGN UP</a>
         </button>
       </div>

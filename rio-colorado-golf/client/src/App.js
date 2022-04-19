@@ -10,7 +10,6 @@ import { setContext } from "@apollo/client/link/context";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import Directions from "./components/Directions";
 
 import Home from "./pages/Home";
 import Amenities from "./pages/Amenities";
@@ -19,6 +18,7 @@ import Events from "./pages/Events";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Contact from "./pages/Contact";
+import Admin from "./pages/Admin";
 
 const httpLink = createHttpLink({
   uri: "http://localhost:3001/graphql",
@@ -45,19 +45,16 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Nav />
-          <div>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/course" component={Course} />
-              <Route exact path="/amenities" component={Amenities} />
-              <Route exact path="/events" component={Events} />
-              <Route exact path="/signup" component={Signup} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/contact" component={Contact} />
-            </Switch>
-          </div>
-          <Footer />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/course" component={Course} />
+            <Route exact path="/amenities" component={Amenities} />
+            <Route exact path="/events" component={Events} />
+            <Route exact path="/signup" component={Signup} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/admin" component={Admin} />
+          </Switch>
         </div>
       </Router>
     </ApolloProvider>
