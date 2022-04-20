@@ -50,4 +50,11 @@ Lots of stuff
 
 ## Team Members
 
-[![GitHub Contributors Image](https://contrib.rocks/image?repo=Chewbakkah/UTA-Final-Project)](https://github.com/Chewbakkah/UTA-Final-Project/tree/main/rio-colorado-golf)
+[![GitHub Contributors Image](https://contrib.rocks/image?repo=Chewbakkah/UTA-Final-Project)](https://github.com/Chewbakkah/UTA-Final-Project/graphs/contributors)
+
+Cheyne Etie
+Cory Davis
+Jared Worsham
+Jarrett Fullington
+John Armstrong
+Nick Anders
