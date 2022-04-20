@@ -58,7 +58,7 @@ const Login = () => {
           <span class="login-text">PASSWORD:</span>
           <input
             class="form-input"
-            type="text"
+            type="password"
             placeholder="ENTER YOUR EMAIL PASSWORD"
             name="password"
             id="login-password"
