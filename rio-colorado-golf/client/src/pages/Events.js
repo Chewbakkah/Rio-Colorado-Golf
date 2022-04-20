@@ -1,8 +1,14 @@
-import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import Calender from "../components/Calender/calender";
 import EventsImg from "../../src/assets/img/riocolo-events.jpg";
 
 const Events = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <section>
       <div className="alligator-img">

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+
+import { useHistory, useLocation } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
 
@@ -56,6 +57,10 @@ const Signup = () => {
 
   const history = useHistory();
 
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <section className="sign-up-container">
       <div className="login-card">
