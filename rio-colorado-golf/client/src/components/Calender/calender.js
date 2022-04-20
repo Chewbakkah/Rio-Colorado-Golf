@@ -4,6 +4,7 @@ const Calender = () => {
   return (
     <div className="calender-container">
       <iframe
+        title="calender of events"
         src="//localendar.com/public/RioColoradoGC"
         height="1000"
         width="100%"

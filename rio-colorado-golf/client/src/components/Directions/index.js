@@ -6,6 +6,7 @@ function Directions() {
       <div className="row directions-row">
         <div className="map-container col-xl-9">
           <iframe
+            title="Directions to Rio Colorado"
             className="map"
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=7320%20fm2668%20bay%20city&t=&z=13&ie=UTF8&iwloc=&output=embed"

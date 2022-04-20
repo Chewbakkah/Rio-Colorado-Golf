@@ -70,7 +70,7 @@ const Signup = () => {
           </button>
         </div>
 
-        <h2 class="d-inline">Rio Colorado</h2>
+        <h2 className="d-inline">Rio Colorado</h2>
 
         <form onSubmit={handleFormSubmit}>
           <div className="form-row">
@@ -117,7 +117,7 @@ const Signup = () => {
               />
 
               {/* // future development code commented out */}
-              {/* <span class="login-text">CONFIRM PASSWORD:</span>
+              {/* <span className="login-text">CONFIRM PASSWORD:</span>
               <input
                 className="form-input"
                 type="text"
@@ -129,7 +129,7 @@ const Signup = () => {
               <div className="row justify-content-center">
                 <div className="sign-up-button">
                   <button className="btn btn-shadow login-button" type="submit">
-                    <span class="btn-text">LOGIN</span>
+                    <span className="btn-text">LOGIN</span>
                   </button>
                 </div>
               </div>

@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
 import courseImg from "../../src/assets/img/full_course_graphic.jpg";
 import Holes from "../components/Course";
 
@@ -10,12 +9,12 @@ const Course = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <section class="course-page">
+    <section className="course-page">
       <div className="course-header">
         <h2>THE COURSE</h2>
       </div>
-      <div class="flex course-container">
-        <div class="row">
+      <div className="flex course-container">
+        <div className="row">
           <div className="col-xl-6 course-text">
             The front nine is a skillfully sculpted, prairie links design, with
             holes playing from every direction to ensure the Texas coastal winds
@@ -35,7 +34,7 @@ const Course = () => {
             ducks, rabbits, cranes, hawks and alligators.
           </div>
           <div className="col-xl-6 course-img">
-            <img className="img-fluid w-100 img-shadow" src={courseImg} />
+            <img className="img-fluid w-100 img-shadow" src={courseImg} alt="course layout"/>
           </div>
         </div>
       </div>
@@ -57,7 +56,7 @@ const Course = () => {
           </div>
           <div className="course-amenities">
             <button className="btn btn-shadow">
-              <a href="">VIEW AMENITIES</a>
+              <a href="/amenities">VIEW AMENITIES</a>
             </button>
           </div>
         </div>

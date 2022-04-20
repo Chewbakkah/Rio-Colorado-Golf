@@ -1,5 +1,6 @@
 import React from "react";
 import RioLogo from "../assets/img/riocolo-logo.png";
+import Fore from "../assets/img/fore.jpg"
 import Auth from "../utils/auth";
 import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_ALL_SERVICES } from "../utils/queries";
@@ -45,26 +46,26 @@ const Admin = () => {
 
   if (user.data.role === "admin") {
     return (
-      <section class="admin-container">
-        <div class="row admin-header admin-card align-items-center">
-          <div class="col-md-6 admin-header-logo">
+      <section className="admin-container">
+        <div className="row admin-header admin-card align-items-center">
+          <div className="col-md-6 admin-header-logo">
             <img src={RioLogo} alt="Rio" />
             Rio Colorado
           </div>
-          <div class="col-md-6 admin-header-txt">ADMIN DASHBOARD</div>
+          <div className="col-md-6 admin-header-txt">ADMIN DASHBOARD</div>
         </div>
 
         {/* // future development code commented out */}
-        {/* <div class="member-control admin-card">
+        {/* <div className="member-control admin-card">
           <h3>USER/MEMBER CONTROLS</h3>
-          <div class="user-search">
+          <div className="user-search">
             <span>USER SEARCH</span>
             <br />
             <form>
-              <div class="row">
-                <div class="col-md-4">
+              <div className="row">
+                <div className="col-md-4">
                   <input
-                    class="form-input"
+                    className="form-input"
                     type="text"
                     placeholder="ENTER A FIRST NAME"
                     name="user-search-first-name"
@@ -72,9 +73,9 @@ const Admin = () => {
                     size="30"
                   />
                 </div>
-                <div class="col-md-4">
+                <div className="col-md-4">
                   <input
-                    class="form-input"
+                    className="form-input"
                     type="text"
                     placeholder="ENTER A LAST NAME"
                     name="user-search-last-name"
@@ -82,9 +83,9 @@ const Admin = () => {
                     size="30"
                   />
                 </div>
-                <div class="col-md-4">
+                <div className="col-md-4">
                   <input
-                    class="form-input"
+                    className="form-input"
                     type="text"
                     placeholder="ENTER AN EMAIL"
                     name="user-search-email"
@@ -93,51 +94,54 @@ const Admin = () => {
                   />
                 </div>
               </div>
-              <button class="btn btn-shadow search-button" type="submit">
+              <button className="btn btn-shadow search-button" type="submit">
                 <a href="">SEARCH</a>
               </button>
             </form>
           </div>
-          <div class="row justify-content-between search-header">
-            <div class="col-md-3">EMAIL ADDRESS</div>
-            <div class="col-md-3">FULL NAME</div>
-            <div class="col-md-3">USER LEVEL</div>
-            <div class="col-md-3">DELETE USER</div>
+          <div className="row justify-content-between search-header">
+            <div className="col-md-3">EMAIL ADDRESS</div>
+            <div className="col-md-3">FULL NAME</div>
+            <div className="col-md-3">USER LEVEL</div>
+            <div className="col-md-3">DELETE USER</div>
           </div>
-          <div class="user-search-results" id="user-search-results">
-            <div class="row justify-content-between search-results">
-              <div class="col-md-3">anitabath@gmail.com</div>
-              <div class="col-md-3">Bath, Anita</div>
-              <div class="col-md-3">USER</div>
-              <div class="col-md-3">
-                <a class="delete" href="#">
-                  <i class="fa-solid fa-xmark"></i>
+          <div className="user-search-results" id="user-search-results">
+            <div className="row justify-content-between search-results">
+              <div className="col-md-3">anitabath@gmail.com</div>
+              <div className="col-md-3">Bath, Anita</div>
+              <div className="col-md-3">USER</div>
+              <div className="col-md-3">
+                <a className="delete" href="#">
+                  <i className="fa-solid fa-xmark"></i>
                 </a>
               </div>
             </div>
   
-            <div class="row justify-content-between search-results">
-              <div class="col-md-3">abeblinkin@gmail.com</div>
-              <div class="col-md-3">Blinken, Abe</div>
-              <div class="col-md-3">MEMBER</div>
-              <div class="col-md-3">
-                <a class="delete" href="#">
-                  <i class="fa-solid fa-xmark"></i>
+            <div className="row justify-content-between search-results">
+              <div className="col-md-3">abeblinkin@gmail.com</div>
+              <div className="col-md-3">Blinken, Abe</div>
+              <div className="col-md-3">MEMBER</div>
+              <div className="col-md-3">
+                <a className="delete" href="#">
+                  <i className="fa-solid fa-xmark"></i>
                 </a>
               </div>
             </div>
           </div>
         </div> */}
-        <div class="pricing-control admin-card">
-          <h3>PRICING CONTROLS</h3>
+        <div className="pricing-control admin-card">
+          <h4>PRICING CONTROLS</h4>
+          <p className="pricing-instructions">
+            When making changes, click into the desired box and input the new price (including the $ sign). When you click away from the box the change will be pushed to the live page. A page refresh is required to see the new pricing.
+          </p>
           <form>
-            <div class="pricing-card">
-              <h4>WEEKDAY</h4>
-              <div class="row justify-content-center">
-                <div class="col-md-2">
-                  <span class="pricing-type">REGULAR</span>
+            <div className="pricing-card">
+              <h4>WEEKDAY</h4>44
+              <div className="row justify-content-center">
+                <div className="col-md-2">
+                  <span className="pricing-type">REGULAR</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[0].price}
                     name="day-pricing-regular"
@@ -146,10 +150,10 @@ const Admin = () => {
                     onBlur={updatePriceDb}
                   />
                 </div>
-                <div class="col-md-2">
-                  <span class="pricing-type">SR/JR</span>
+                <div className="col-md-2">
+                  <span className="pricing-type">SR/JR</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[1].price}
                     name="day-pricing-sr-jr"
@@ -158,10 +162,10 @@ const Admin = () => {
                     onBlur={updatePriceDb}
                   />
                 </div>
-                <div class="col-md-2">
-                  <span class="pricing-type">9-HOLE</span>
+                <div className="col-md-2">
+                  <span className="pricing-type">9-HOLE</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[2].price}
                     name="day-pricing-9"
@@ -170,10 +174,10 @@ const Admin = () => {
                     onBlur={updatePriceDb}
                   />
                 </div>
-                <div class="col-md-2">
-                  <span class="pricing-type">TWILIGHT</span>
+                <div className="col-md-2">
+                  <span className="pricing-type">TWILIGHT</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[3].price}
                     name="day-pricing-twilight"
@@ -182,10 +186,10 @@ const Admin = () => {
                     onBlur={updatePriceDb}
                   />
                 </div>
-                <div class="col-md-2">
-                  <span class="pricing-type">WALKING</span>
+                <div className="col-md-2">
+                  <span className="pricing-type">WALKING</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[4].price}
                     name="day-pricing-walking"
@@ -196,13 +200,13 @@ const Admin = () => {
                 </div>
               </div>
             </div>
-            <div class="pricing-card">
+            <div className="pricing-card">
               <h4>WEEKEND</h4>
-              <div class="row justify-content-center">
-                <div class="col-md-2">
-                  <span class="pricing-type">REGULAR</span>
+              <div className="row justify-content-center">
+                <div className="col-md-2">
+                  <span className="pricing-type">REGULAR</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[5].price}
                     name="end-pricing-regular"
@@ -211,10 +215,10 @@ const Admin = () => {
                     onBlur={updatePriceDb}
                   />
                 </div>
-                <div class="col-md-2">
-                  <span class="pricing-type">SR/JR</span>
+                <div className="col-md-2">
+                  <span className="pricing-type">SR/JR</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[6].price}
                     name="end-pricing-sr-jr"
@@ -223,10 +227,10 @@ const Admin = () => {
                     onBlur={updatePriceDb}
                   />
                 </div>
-                <div class="col-md-2">
-                  <span class="pricing-type">9-HOLE</span>
+                <div className="col-md-2">
+                  <span className="pricing-type">9-HOLE</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[7].price}
                     name="end-pricing-9"
@@ -235,10 +239,10 @@ const Admin = () => {
                     onBlur={updatePriceDb}
                   />
                 </div>
-                <div class="col-md-2">
-                  <span class="pricing-type">TWILIGHT</span>
+                <div className="col-md-2">
+                  <span className="pricing-type">TWILIGHT</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[8].price}
                     name="end-pricing-twilight"
@@ -247,10 +251,10 @@ const Admin = () => {
                     onBlur={updatePriceDb}
                   />
                 </div>
-                <div class="col-md-2">
-                  <span class="pricing-type">WALKING</span>
+                <div className="col-md-2">
+                  <span className="pricing-type">WALKING</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[9].price}
                     name="end-pricing-walking"
@@ -261,13 +265,13 @@ const Admin = () => {
                 </div>
               </div>
             </div>
-            <div class="pricing-card">
+            <div className="pricing-card">
               <h4>MISC</h4>
-              <div class="row justify-content-around">
-                <div class="col-md-4">
-                  <span class="pricing-type">SINGLE/3'S</span>
+              <div className="row justify-content-around">
+                <div className="col-md-4">
+                  <span className="pricing-type">SINGLE/3'S</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[10].price}
                     name="misc-pricing-single"
@@ -276,10 +280,10 @@ const Admin = () => {
                     onBlur={updatePriceDb}
                   />
                 </div>
-                <div class="col-md-4">
-                  <span class="pricing-type">REPLAY 9</span>
+                <div className="col-md-4">
+                  <span className="pricing-type">REPLAY 9</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[11].price}
                     name="misc-pricing-9"
@@ -288,10 +292,10 @@ const Admin = () => {
                     onBlur={updatePriceDb}
                   />
                 </div>
-                <div class="col-md-4">
-                  <span class="pricing-type">REPLAY 18</span>
+                <div className="col-md-4">
+                  <span className="pricing-type">REPLAY 18</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[12].price}
                     name="misc-pricing-18"
@@ -301,11 +305,11 @@ const Admin = () => {
                   />
                 </div>
               </div>
-              <div class="row justify-content-around bottom-misc">
-                <div class="col-md-4">
-                  <span class="pricing-type">TWILIGHT TIME</span>
+              <div className="row justify-content-around bottom-misc">
+                <div className="col-md-4">
+                  <span className="pricing-type">TWILIGHT TIME</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder="XX"
                     name="misc-pricing-time"
@@ -313,10 +317,10 @@ const Admin = () => {
                     size="2"
                   />
                 </div>
-                <div class="col-md-4">
-                  <span class="pricing-type">RANGE SM</span>
+                <div className="col-md-4">
+                  <span className="pricing-type">RANGE SM</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[13].price}
                     name="misc-pricing-sm"
@@ -325,10 +329,10 @@ const Admin = () => {
                     onBlur={updatePriceDb}
                   />
                 </div>
-                <div class="col-md-4">
-                  <span class="pricing-type">RANGE LG</span>
+                <div className="col-md-4">
+                  <span className="pricing-type">RANGE LG</span>
                   <input
-                    class="form-input pricing"
+                    className="form-input pricing"
                     type="text"
                     placeholder={services[14].price}
                     name="misc-pricing-lg"
@@ -341,7 +345,7 @@ const Admin = () => {
             </div>
 
             {/* // future development code commented out */}
-            {/* <button class="btn btn-shadow pricing-button" type="submit">
+            {/* <button className="btn btn-shadow pricing-button" type="submit">
               <a href="">UPDATE</a>
             </button> */}
           </form>
@@ -351,7 +355,8 @@ const Admin = () => {
   } else {
     return (
       <div className="admin-error">
-        <h3>You are not authorized to view this page</h3>
+        <img src={Fore} alt="Fore o' Fore"/>
+        <h3>You are not authorized to view this page.</h3>
       </div>
     );
   }
