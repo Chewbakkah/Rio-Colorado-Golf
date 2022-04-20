@@ -350,7 +350,7 @@ const Admin = () => {
     );
   } else {
     return (
-      <div>
+      <div className="admin-error">
         <h3>You are not authorized to view this page</h3>
       </div>
     );
