@@ -115,6 +115,8 @@ const Signup = () => {
                 size="40"
                 onChange={handleChange}
               />
+
+{/* // future development code commented out */}
               {/* <span class="login-text">CONFIRM PASSWORD:</span>
               <input
                 className="form-input"
