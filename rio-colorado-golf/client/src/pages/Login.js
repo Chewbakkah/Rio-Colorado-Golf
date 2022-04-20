@@ -45,9 +45,9 @@ const Login = () => {
     <section className="sign-up-container">
       <div className="login-card">
         <div className="float-end d-inline p-2">
-          <a className="exit-icon" onClick={() => history.goBack()}>
+          <button className="exit-icon" onClick={() => history.goBack()}>
             <i className="fa-solid fa-xmark"></i>
-          </a>
+          </button>
         </div>
         <h2>Rio Colorado</h2>
         <form onSubmit={formSubmission}>
