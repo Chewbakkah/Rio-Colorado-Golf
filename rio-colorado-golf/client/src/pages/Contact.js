@@ -1,5 +1,6 @@
 import { useQuery } from "@apollo/client";
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Directions from "../components/Directions";
 import { QUERY_ALL_SERVICES } from "../utils/queries";
 
@@ -7,9 +8,14 @@ import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
 import rioGreenImage from "../../src/assets/img/riocolo-green.jpg";
 
 const Contact = () => {
-  const [pricingState, setPricingState] = useState();
+  // const [pricingState, setPricingState] = useState();
 
   const { loading, error, data } = useQuery(QUERY_ALL_SERVICES);
+
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   if (loading) return "Loading";
   if (error) return `error ${error}`;
@@ -19,7 +25,7 @@ const Contact = () => {
   if (data) {
     services = data.services;
   }
-
+// future development code commented out
   // const handlePricing = async () => {
   //   try {
   //     const pricing = await getServices();
@@ -50,11 +56,6 @@ const Contact = () => {
           post-event scoring, to even providing dinner, we are here to serve you
           and make your next game one to remember.
         </div>
-        <div className="intro-book-now">
-          <button className="btn btn-shadow">
-            <a href="">BOOK ONLINE</a>
-          </button>
-        </div>
       </section>
       <section className="missing-container">
         <div className="intro-welcome">
@@ -65,6 +66,9 @@ const Contact = () => {
             <div class="col-md-6">
               <h6 class="pricing-title text-center">WEEKDAY</h6>
               <div class="text-center pricing_r_align pricing_margin">
+
+{/* future development code  */}
+
                 {/* {services.map((service) => {
                   if (service.priceTimeFrame === "Weekday") {
                     return `<p>${service.service}: <span id="weekday-regular">${service.price}</span></p><br />`;

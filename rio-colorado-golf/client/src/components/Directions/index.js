@@ -37,7 +37,7 @@ function Directions() {
             </div>
             <div className="directions-book-now">
               <button className="btn btn-shadow">
-                <a href="">BOOK ONLINE</a>
+                <a href="/contact">BOOK NOW</a>
               </button>
             </div>
           </div>
