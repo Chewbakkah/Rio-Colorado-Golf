@@ -10,7 +10,7 @@ const Nav = () => {
     <header className="primary-header flex">
       <div>
         <Link to="/">
-          <img className="header-img" src={navImg} />
+          <img className="header-img" src={navImg} alt="Rio Colorado"/>
         </Link>
       </div>
 

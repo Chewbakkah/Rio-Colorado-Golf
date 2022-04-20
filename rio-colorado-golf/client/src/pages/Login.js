@@ -45,15 +45,15 @@ const Login = () => {
     <section className="sign-up-container">
       <div className="login-card">
         <div className="float-end d-inline p-2">
-          <a className="exit-icon" onClick={() => history.goBack()}>
+          <button className="exit-icon" onClick={() => history.goBack()}>
             <i className="fa-solid fa-xmark"></i>
-          </a>
+          </button>
         </div>
         <h2>Rio Colorado</h2>
         <form onSubmit={formSubmission}>
-          <span class="login-text">EMAIL:</span>
+          <span className="login-text">EMAIL:</span>
           <input
-            class="form-input"
+            className="form-input"
             type="text"
             placeholder="ENTER YOUR EMAIL ADDRESS"
             name="email"
@@ -61,9 +61,9 @@ const Login = () => {
             onChange={stateChange}
             size="40"
           />
-          <span class="login-text">PASSWORD:</span>
+          <span className="login-text">PASSWORD:</span>
           <input
-            class="form-input"
+            className="form-input"
             type="password"
             placeholder="ENTER YOUR EMAIL PASSWORD"
             name="password"
@@ -71,15 +71,15 @@ const Login = () => {
             onChange={stateChange}
             size="40"
           />
-          <div class="row justify-content-center">
+          <div className="row justify-content-center">
             {error ? (
               <div>
                 <p>The login information you have entered is incorrect.</p>
               </div>
             ) : null}
-            <div class="sign-up-button">
-              <button class="btn btn-shadow" type="submit">
-                <span class="btn-text">LOGIN</span>
+            <div className="sign-up-button">
+              <button className="btn btn-shadow" type="submit">
+                <span className="btn-text">LOGIN</span>
               </button>
             </div>
           </div>
