@@ -48,8 +48,6 @@ const Footer = () => {
                 <span>&nbsp;</span>
               </>
             )}
-
-            <Link to="/admin">ADMIN</Link>
           </div>
         </section>
       </footer>
