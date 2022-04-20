@@ -21,7 +21,8 @@ import Admin from "./pages/Admin";
 import NoMatch from "./pages/NoMatch"
 
 const httpLink = createHttpLink({
-  uri: "/graphql",
+  // uri: "/graphql", uncomment for live server and delete row below
+  uri: "http://localhost:3001/graphql",
 });
 
 const authLink = setContext((_, { headers }) => {
