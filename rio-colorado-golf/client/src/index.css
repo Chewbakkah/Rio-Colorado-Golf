@@ -796,6 +796,13 @@ footer a:hover {
     margin: 0 auto;
     z-index: 9990;
   }
+  .admin-error {
+    text-align: center;
+  }
+  .admin-error h3 {
+    color: #ff0000;
+    font-size: 3vw;
+  }
 }
 
 @media (max-width: 990px) {

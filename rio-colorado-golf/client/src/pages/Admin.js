@@ -129,13 +129,13 @@ const Admin = () => {
           </div>
         </div> */}
         <div class="pricing-control admin-card">
-          <h3>PRICING CONTROLS</h3>
+          <h4>PRICING CONTROLS</h4>
           <p className="pricing-instructions">
             When making changes, click into the desired box and input the new price (including the $ sign). When you click away from the box the change will be pushed to the live page. A page refresh is required to see the new pricing.
           </p>
           <form>
             <div class="pricing-card">
-              <h4>WEEKDAY</h4>
+              <h4>WEEKDAY</h4>44
               <div class="row justify-content-center">
                 <div class="col-md-2">
                   <span class="pricing-type">REGULAR</span>
@@ -353,8 +353,8 @@ const Admin = () => {
     );
   } else {
     return (
-      <div>
-        <h3>You are not authorized to view this page</h3>
+      <div className="admin-error">
+        <h3>You are not authorized to view this page.</h3>
       </div>
     );
   }
