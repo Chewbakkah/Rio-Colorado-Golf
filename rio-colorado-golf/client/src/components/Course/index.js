@@ -265,7 +265,7 @@ function Holes() {
           </div>
         </div>
         <div className="col-md-7 hole-img-container">
-          <img src={course.image} alt="Hole {course.name}" />
+          <img src={course.image} alt="Hole Layout" />
         </div>
       </div>
     );

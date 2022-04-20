@@ -223,13 +223,13 @@ a {
   width: 60%;
 }
 
-.amenities {
+/* .amenities {
   background-image: url(./assets/img/riocolo-amenities.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
   background-size: 100%;
-}
+} */
 
 .amenities-buffer {
   height: 25vw;
@@ -292,6 +292,8 @@ a {
 .directions {
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .directions h4 {
@@ -316,6 +318,10 @@ a {
 .map {
   width: 100%;
   height: 400px;
+}
+
+.map-container {
+  text-align: right;
 }
 
 footer {
@@ -574,6 +580,18 @@ footer a:hover {
   padding: 20px;
 }
 
+.coming-soon {
+  /* width: 50vw; */
+  text-align: center;
+}
+
+.coming-soon h2 {
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+}
+
 .login-card {
   margin: auto;
   padding-left: 5%;
@@ -802,7 +820,7 @@ footer a:hover {
   }
   .admin-error h3 {
     color: #ff0000;
-    font-size: 2vw;
+    font-size: 3vw;
   }
 }
 
@@ -847,7 +865,7 @@ footer a:hover {
 
   .primary-navigation {
     height: 100vh;
-    padding-top: 40%;
+    padding-top: 30%;
   }
 
   .header-text {

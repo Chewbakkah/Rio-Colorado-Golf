@@ -12,12 +12,9 @@ const Amenities = () => {
   }, [pathname]);
   return (
     <section class="amenities">
-
-{/* // future development code commented out  */}
-      {/* <div className="cart-img">
-        <img className="img-fluid w-100 img-shadow" src={amenHeaderImg} />
-      </div> */}
-      <div class="amenities-buffer"></div>
+      <div className="cart-img">
+        <img className="img-fluid w-100 img-shadow" src={amenHeaderImg} alt="Golf Carts" />
+      </div>
       <section className="amenities-container">
         <div className="intro-welcome">
           <h2>AMENITIES</h2>
@@ -28,11 +25,11 @@ const Amenities = () => {
           include two putting greens, a short game green, and a driving range.
         </div>
         <div className="cart-img">
-          <img className="img-fluid w-100 img-shadow" src={puttingImg} />
+          <img className="img-fluid w-100 img-shadow" src={puttingImg} alt="Putting Green"/>
         </div>
       </section>
       <div className="amenities-img">
-        <img className="img-fluid w-100" src={campImg} />
+        <img className="img-fluid w-100" src={campImg} alt="caming nearby"/>
       </div>
       <section class="amenities-bottom">
         <section className="onsite-container">

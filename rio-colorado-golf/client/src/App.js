@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {
   ApolloClient,
@@ -6,7 +5,7 @@ import {
   ApolloProvider,
   createHttpLink,
 } from "@apollo/client";
-import { setContext } from "@apollo/client/link/context";
+// import { setContext } from "@apollo/client/link/context";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
