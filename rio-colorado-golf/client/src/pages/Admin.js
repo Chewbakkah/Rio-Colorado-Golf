@@ -136,7 +136,7 @@ const Admin = () => {
           </p>
           <form>
             <div className="pricing-card">
-              <h4>WEEKDAY</h4>44
+              <h4>WEEKDAY</h4>
               <div className="row justify-content-center">
                 <div className="col-md-2">
                   <span className="pricing-type">REGULAR</span>
@@ -269,7 +269,7 @@ const Admin = () => {
               <h4>MISC</h4>
               <div className="row justify-content-around">
                 <div className="col-md-4">
-                  <span className="pricing-type">SINGLE/3'S</span>
+                  <span className="pricing-type">SINGLE CART RIDER</span>
                   <input
                     className="form-input pricing"
                     type="text"
