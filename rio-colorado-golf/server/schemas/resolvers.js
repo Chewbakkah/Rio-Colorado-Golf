@@ -1,5 +1,8 @@
 const { User, Pricing } = require("../models");
 const { signToken } = require("../utils/auth");
+
+// FUTURE DEVELOPMENT: STRIPE IMPLEMENTATION
+
 //const stripe = require("stripe")(
 //  "sk_test_51KaO22FV5HS8ufgmSBzTduwrg87SPn7ELoyDgOvQbBo3njBaGOn4fuFsrVFwvn3GXIzUe7ZzpfxiAdLIzYLWTjYu006xIUPkBl"
 //);
@@ -35,6 +38,8 @@ const resolvers = {
     servicesByTime: async (parent, { timeFrame }) => {
       return await Pricing.find({ priceTimeFrame: timeFrame });
     },
+
+// FUTURE DEVELOPMENT: STRIPE IMPLEMENTATION
 
     // order: async (parent, { _id }, context) => {
     //   if (context.user) {
