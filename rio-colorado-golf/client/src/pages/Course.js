@@ -56,7 +56,7 @@ const Course = () => {
           </div>
           <div className="course-amenities">
             <button className="btn btn-shadow">
-              <a href="">VIEW AMENITIES</a>
+              <a href="/amenities">VIEW AMENITIES</a>
             </button>
           </div>
         </div>

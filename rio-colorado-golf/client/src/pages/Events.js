@@ -17,7 +17,7 @@ const Events = () => {
         <div className="intro-welcome">
           <h2>EVENTS</h2>
           <button className="calender-btn btn-shadow calender-button">
-            <a href="">VIEW CALENDER</a>
+            <a href="//localendar.com/public/RioColoradoGC" rel="noopener noreferrer" target="_blank">VIEW CALENDER</a>
           </button>
         </div>
 
