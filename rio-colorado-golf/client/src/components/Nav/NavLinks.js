@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Auth } from "../../utils/auth"
+import Auth from "../../utils/auth"
 
 
 const NavLinks = (props) => {
