@@ -3,8 +3,8 @@ import React from "react";
 function Directions() {
   return (
     <div className="container directions">
-      <div className="row">
-        <div className="col-lg-8">
+      <div className="row directions-row">
+        <div className="map-container col-xl-9">
           <iframe
             className="map"
             id="gmap_canvas"
@@ -15,7 +15,7 @@ function Directions() {
             marginWidth="0"
           ></iframe>
         </div>
-        <div className="col-lg-4">
+        <div className="col-xl-3">
           <div>
             <div>
               <h4>ADDRESS</h4>

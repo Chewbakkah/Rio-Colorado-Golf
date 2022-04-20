@@ -18,6 +18,17 @@ const NavLinks = (props) => {
           onClick={() => props.isMobile && props.closeMobileMenu()}
           className="active"
         >
+          <Link to="/">
+            <span className="header-text">HOME</span>
+          </Link>
+        </motion.li>
+        <motion.li
+          initial={animateFrom}
+          animate={animateTo}
+          transition={{ delay: 0.1 }}
+          onClick={() => props.isMobile && props.closeMobileMenu()}
+          className="active"
+        >
           <Link to="/course">
             <span className="header-text">COURSE</span>
           </Link>
@@ -25,7 +36,7 @@ const NavLinks = (props) => {
         <motion.li
           initial={animateFrom}
           animate={animateTo}
-          transition={{ delay: 0.1 }}
+          transition={{ delay: 0.2 }}
           onClick={() => props.isMobile && props.closeMobileMenu()}
           className="active"
         >
@@ -36,7 +47,7 @@ const NavLinks = (props) => {
         <motion.li
           initial={animateFrom}
           animate={animateTo}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.3 }}
           onClick={() => props.isMobile && props.closeMobileMenu()}
           className="active"
         >
@@ -47,7 +58,7 @@ const NavLinks = (props) => {
         <motion.li
           initial={animateFrom}
           animate={animateTo}
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.4 }}
           onClick={() => props.isMobile && props.closeMobileMenu()}
           className="active"
         >
@@ -58,7 +69,7 @@ const NavLinks = (props) => {
         <motion.li
           initial={animateFrom}
           animate={animateTo}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.5 }}
           onClick={() => props.isMobile && props.closeMobileMenu()}
           className="active"
         >
