@@ -3,9 +3,9 @@ import Fore from "../assets/img/fore.jpg"
 
 const NoMatch = () => {
   return (
-    <div>
+    <div className="fore">
     <img src={Fore} alt="Fore o' Fore"/>
-      Oops, we couldn't find that page.
+      <h3>Oops, we couldn't find that page.</h3>
     </div>
   );
 };

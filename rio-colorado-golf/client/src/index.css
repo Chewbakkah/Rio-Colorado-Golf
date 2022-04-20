@@ -784,6 +784,13 @@ footer a:hover {
   color: #ff0000;
   font-size: 3vw;
 }
+.fore {
+  text-align: center;
+}
+.fore h3 {
+  font-size: 3vw;
+  color: #ff0000;
+}
 
 @media (max-width: 1199px) {
   .course-img {
