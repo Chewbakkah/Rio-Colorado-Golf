@@ -1,13 +1,12 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
 import { motion } from "framer-motion";
 import crestLogo from "../../src/assets/img/riocolo-logo.png";
 import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
 import holeImageGrad from "../../src/assets/img/riocolo-wht-gradient.png";
 import greenImage from "../../src/assets/img/riocolo-green.jpg";
 import Directions from "../components/Directions";
-import Footer from "../components/Footer";
+
 
 const Home = () => {
   const { pathname } = useLocation();
@@ -37,8 +36,8 @@ const Home = () => {
             <img src={crestLogo} alt="Rio Colorado Logo" />
           </motion.div>
         </section>
-        <img className="img-fluid w-100" src={holeImageGrad} />
-        <img className="img-fluid w-100 img-shadow" src={holeImage} />
+        <img className="img-fluid w-100" src={holeImageGrad} alt="Welcome to Rio Colorado"/>
+        <img className="img-fluid w-100 img-shadow" src={holeImage} alt="ball on the edge"/>
         <section className="intro-container">
           <div className="intro-welcome">
             <h2>WELCOME TO RIO COLORADO</h2>
@@ -66,7 +65,7 @@ const Home = () => {
           </div>
         </section>
         <div className="intro-img">
-          <img className="img-fluid w-100" src={greenImage} />
+          <img className="img-fluid w-100" src={greenImage} alt="hole 5 teebox"/>
         </div>
         <section className="intro-container">
           <div className="intro-welcome">

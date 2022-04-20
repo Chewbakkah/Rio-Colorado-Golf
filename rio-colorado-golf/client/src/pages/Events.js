@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
 import Calender from "../components/Calender/calender";
 import EventsImg from "../../src/assets/img/riocolo-events.jpg";
 
@@ -12,7 +11,7 @@ const Events = () => {
   return (
     <section>
       <div className="alligator-img">
-        <img className="img-fluid w-100 img-shadow" src={EventsImg} />
+        <img className="img-fluid w-100 img-shadow" src={EventsImg} alt="he'll bite"/>
       </div>
       <div className="events-container">
         <div className="intro-welcome">
@@ -29,7 +28,7 @@ const Events = () => {
           <h2>TOURNAMENT RESULTS</h2>
         </div>
         <div className="tournament-results" id="tournament-results">
-          <div class="coming-soon">
+          <div className="coming-soon">
             <h2>Coming Soon!</h2>
           </div>
         </div>
