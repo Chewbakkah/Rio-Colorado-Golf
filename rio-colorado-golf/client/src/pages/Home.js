@@ -1,4 +1,6 @@
-import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import { motion } from "framer-motion";
 import crestLogo from "../../src/assets/img/riocolo-logo.png";
 import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
@@ -8,6 +10,10 @@ import Directions from "../components/Directions";
 import Footer from "../components/Footer";
 
 const Home = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   const animateFrom = { opacity: 0, y: -100 };
   const animateTo = { opacity: 1, y: 0 };
   return (
@@ -52,7 +58,7 @@ const Home = () => {
           </div>
           <div className="intro-book-now">
             <button className="btn btn-shadow">
-              <a href="">BOOK ONLINE</a>
+              <a href="/contact">BOOK NOW</a>
             </button>
             {/* <div className="new-btn from-bottom">
               <a href="">BOOK ONLINE</a>
