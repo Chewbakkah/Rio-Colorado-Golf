@@ -1,8 +1,14 @@
-import React from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import courseImg from "../../src/assets/img/full_course_graphic.jpg";
 import Holes from "../components/Course";
 
 const Course = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <section class="course-page">
       <div className="course-header">
