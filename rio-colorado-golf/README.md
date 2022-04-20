@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Rio Colorado Golf Course Website Overhaul
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[GITHUB REPO](https://github.com/Chewbakkah/UTA-Final-Project/tree/main/rio-colorado-golf)
 
-## Available Scripts
+<!-- [Link to Heroku](https://github.com/Chewbakkah/UTA-Final-Project/tree/main/rio-colorado-golf) -->
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Description](#description-of-the-project)
+- [Languages](#languages-used)
+- [Technologies & Libraries](#technologies-and-libraries-used)
+- [Features](#features)
+- [Installation](#installation-instructions)
+- [Team Members](#team-members)
+- [Testing](#testing-instructions)
+- [Contact](#contact-information)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Description Of the Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This website is a full-scale overhaul of the Rio Colorado Golf Course's website.
 
-### `npm test`
+## Languages Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+- Express
 
-### `npm run build`
+## Technologies and Libraries Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- GraphQL
+- MongoDB
+- Mongoose ODM
+- Heroku
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Golf course page with full React VDOM manipulation allowing the selection of every hole on the course
+- Admin level privileges such as price changes
+- Full user authentication including sign-up and login/logout ability
+- Queries and mutations for retrieving, adding, updating, and deleting data
 
-### `npm run eject`
+## Installation Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+Lots of stuff
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Team Members
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![GitHub Contributors Image](https://contrib.rocks/image?repo=Chewbakkah/UTA-Final-Project)](https://github.com/Chewbakkah/UTA-Final-Project/tree/main/rio-colorado-golf)
