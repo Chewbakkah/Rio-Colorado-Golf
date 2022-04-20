@@ -15,7 +15,7 @@ const Events = () => {
         <img className="img-fluid w-100 img-shadow" src={EventsImg} />
       </div>
       <div className="events-container">
-        <div className="missing-header">
+        <div className="intro-welcome">
           <h2>EVENTS</h2>
           <button className="calender-btn btn-shadow calender-button">
             <a href="">VIEW CALENDER</a>
@@ -25,11 +25,13 @@ const Events = () => {
         <Calender />
       </div>
       <div className="tournament-container">
-        <div className="missing-header">
+        <div className="intro-welcome">
           <h2>TOURNAMENT RESULTS</h2>
         </div>
         <div className="tournament-results" id="tournament-results">
-          No Tournament Info Available
+          <div class="coming-soon">
+            <h2>Coming Soon!</h2>
+          </div>
         </div>
       </div>
     </section>

@@ -12,12 +12,9 @@ const Amenities = () => {
   }, [pathname]);
   return (
     <section class="amenities">
-
-{/* // future development code commented out  */}
-      {/* <div className="cart-img">
+      <div className="cart-img">
         <img className="img-fluid w-100 img-shadow" src={amenHeaderImg} />
-      </div> */}
-      <div class="amenities-buffer"></div>
+      </div>
       <section className="amenities-container">
         <div className="intro-welcome">
           <h2>AMENITIES</h2>
