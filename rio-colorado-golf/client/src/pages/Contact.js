@@ -19,7 +19,7 @@ const Contact = () => {
   if (data) {
     services = data.services;
   }
-
+// future development code commented out
   // const handlePricing = async () => {
   //   try {
   //     const pricing = await getServices();
@@ -65,6 +65,9 @@ const Contact = () => {
             <div class="col-md-6">
               <h6 class="pricing-title text-center">WEEKDAY</h6>
               <div class="text-center pricing_r_align pricing_margin">
+
+{/* future development code  */}
+
                 {/* {services.map((service) => {
                   if (service.priceTimeFrame === "Weekday") {
                     return `<p>${service.service}: <span id="weekday-regular">${service.price}</span></p><br />`;

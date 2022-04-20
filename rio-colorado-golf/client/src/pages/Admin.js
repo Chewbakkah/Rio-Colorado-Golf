@@ -19,7 +19,7 @@ const Admin = () => {
   if (data) {
     services = data.services;
   }
-
+// future development code commented out
   // const formSubmission = async (event) => {
   //   event.preventDefault();
   // };
@@ -53,6 +53,8 @@ const Admin = () => {
           </div>
           <div class="col-md-6 admin-header-txt">ADMIN DASHBOARD</div>
         </div>
+
+        {/* // future development code commented out */}
         {/* <div class="member-control admin-card">
           <h3>USER/MEMBER CONTROLS</h3>
           <div class="user-search">
@@ -337,6 +339,8 @@ const Admin = () => {
                 </div>
               </div>
             </div>
+
+            {/* // future development code commented out */}
             {/* <button class="btn btn-shadow pricing-button" type="submit">
               <a href="">UPDATE</a>
             </button> */}
