@@ -1,5 +1,6 @@
 import React from "react";
 import RioLogo from "../assets/img/riocolo-logo.png";
+import Fore from "../assets/img/fore.jpg"
 import Auth from "../utils/auth";
 import { useQuery, useMutation } from "@apollo/client";
 import { QUERY_ALL_SERVICES } from "../utils/queries";
@@ -354,6 +355,7 @@ const Admin = () => {
   } else {
     return (
       <div className="admin-error">
+        <img src={Fore} alt="Fore o' Fore"/>
         <h3>You are not authorized to view this page.</h3>
       </div>
     );
