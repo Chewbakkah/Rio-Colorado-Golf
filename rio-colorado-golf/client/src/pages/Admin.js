@@ -130,6 +130,9 @@ const Admin = () => {
         </div> */}
         <div class="pricing-control admin-card">
           <h3>PRICING CONTROLS</h3>
+          <p className="pricing-instructions">
+            When making changes, click into the desired box and input the new price (including the $ sign). When you click away from the box the change will be pushed to the live page. A page refresh is required to see the new pricing.
+          </p>
           <form>
             <div class="pricing-card">
               <h4>WEEKDAY</h4>
