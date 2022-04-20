@@ -29,7 +29,7 @@ const Amenities = () => {
         </div>
       </section>
       <div className="amenities-img">
-        <img className="img-fluid w-100" src={campImg} />
+        <img className="img-fluid w-100" src={campImg} alt="caming nearby"/>
       </div>
       <section class="amenities-bottom">
         <section className="onsite-container">
