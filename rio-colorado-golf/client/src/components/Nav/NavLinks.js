@@ -73,9 +73,21 @@ const NavLinks = (props) => {
           onClick={() => props.isMobile && props.closeMobileMenu()}
           className="active"
         >
-          <Link to="/login">
-            <span className="header-text">LOGIN</span>
-          </Link>
+          {Auth.loggedIn() ? (
+            <>
+              <Link to="/profile">
+                <a href="/" onClick={logout}>
+                  <span className="header-text">LOGOUT</span>
+                </a>
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link to="/login">
+                <span className="header-text">LOGIN</span>
+              </Link>
+            </>
+          )}
         </motion.li>
       </ul>
     </div>
