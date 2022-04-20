@@ -73,6 +73,7 @@ header {
   background: hsl(0 0% 100% / 0.5);
   backdrop-filter: blur(1rem);
   background-size: 100vh;
+  overflow-y: scroll;
 }
 
 @supports (backdrop-filter: blur(1rem)) {
@@ -830,7 +831,6 @@ footer a:hover {
     margin: 0 auto;
     z-index: 9990;
   }
-
 }
 
 @media (max-width: 990px) {
@@ -863,6 +863,7 @@ footer a:hover {
   }
   nav ul li {
     padding-left: 40px;
+    /* padding-bottom: 40px; */
     padding-top: 0px;
   }
   .header-img {
@@ -875,6 +876,7 @@ footer a:hover {
   .primary-navigation {
     height: 100vh;
     padding-top: 30%;
+    padding-bottom: 30%;
   }
 
   .header-text {
