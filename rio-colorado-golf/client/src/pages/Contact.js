@@ -116,7 +116,7 @@ const Contact = () => {
               <h6 className="twi_pricing_title text-center">TWILIGHT: 3 PM</h6>
               <div className="text-center pricing_r_align pricing_twi_margin">
                 <p>
-                  SINGLE/3-SOME:{" "}
+                  SINGLE CART RIDER:{" "}
                   <span id="weekday-regular">{services[10].price}</span>
                   <br />
                   REPLAY 9 HOLES:{" "}
