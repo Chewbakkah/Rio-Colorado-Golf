@@ -2,11 +2,13 @@ import React from "react";
 import Directions from "../components/Directions";
 import amenHeaderImg from "../../src/assets/img/riocolo-amenities.jpg";
 import campImg from "../../src/assets/img/riocolo-camp.jpg";
-import puttingImg from "../../src/assets/img/putting-green2.jpg";
+import puttingImg from "../../src/assets/img/riocolo-puttinggreen2.jpg";
 
 const Amenities = () => {
   return (
     <section class="amenities">
+
+{/* // future development code commented out  */}
       {/* <div className="cart-img">
         <img className="img-fluid w-100 img-shadow" src={amenHeaderImg} />
       </div> */}
