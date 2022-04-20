@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Auth } from "../../utils/auth"
 
 const NavLinks = (props) => {
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
   const animateFrom = { opacity: 0, y: -40 };
   const animateTo = { opacity: 1, y: 0 };
   return (
