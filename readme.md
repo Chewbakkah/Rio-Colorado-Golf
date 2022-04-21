@@ -57,3 +57,6 @@ This project featured a full-scale rebuild of the Rio Colorado Golf Course's web
 - **Jarrett Fullington** - [Back End Lead](https://github.com/jarrettcoding)
 - **John Armstrong** - [Back End](https://github.com/jackarms)
 - **Nick Anders** - [Front End Lead](https://github.com/nickbanders)
+
+
+![riocolor](https://user-images.githubusercontent.com/92648393/164539596-54c4eeee-69a7-4f64-a24d-f828891c2fc4.JPG)
