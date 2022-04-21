@@ -15,7 +15,7 @@ const Course = () => {
       </div>
       
         <div className="course-img">
-            <img className="img-fluid w-100 img-shadow" src={courseImg} alt="course layout"/>
+            <img className="img-fluid img-shadow" src={courseImg} alt="course layout"/>
           </div>
       
       <div className="flex course-container">
