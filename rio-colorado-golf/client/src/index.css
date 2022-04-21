@@ -73,7 +73,6 @@ header {
   background: hsl(0 0% 100% / 0.5);
   backdrop-filter: blur(1rem);
   background-size: 100vh;
-  overflow-y: scroll;
 }
 
 @supports (backdrop-filter: blur(1rem)) {
@@ -878,6 +877,7 @@ footer a:hover {
     height: 100vh;
     padding-top: 30%;
     padding-bottom: 30%;
+    overflow-y: scroll;
   }
 
   .header-text {
