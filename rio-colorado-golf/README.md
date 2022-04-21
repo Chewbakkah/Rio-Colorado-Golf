@@ -4,7 +4,7 @@
 
 [GITHUB REPO](https://github.com/Chewbakkah/UTA-Final-Project/tree/main/rio-colorado-golf)
 
-[HEROKU LINK](https://github.com/Chewbakkah/UTA-Final-Project/tree/main/rio-colorado-golf)
+[HEROKU LINK](https://chewbakkah-riocoloradogolf.herokuapp.com/)
 
 ## Table of Contents
 
