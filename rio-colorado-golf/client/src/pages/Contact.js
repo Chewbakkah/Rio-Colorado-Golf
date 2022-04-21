@@ -5,7 +5,6 @@ import Directions from "../components/Directions";
 import { QUERY_ALL_SERVICES } from "../utils/queries";
 
 import holeImage from "../../src/assets/img/riocolo-cup-slice.jpg";
-import rioGreenImage from "../../src/assets/img/riocolo-green.jpg";
 
 const Contact = () => {
   // const [pricingState, setPricingState] = useState();
@@ -41,8 +40,8 @@ const Contact = () => {
 
   return (
     <section>
-      <div class="hole-img">
-        <img className="img-fluid w-100 img-shadow" src={holeImage} />
+      <div className="hole-img">
+        <img className="img-fluid w-100 img-shadow" src={holeImage} alt="ball on the edge"/>
       </div>
       <section className="intro-container">
         <div className="intro-welcome">
@@ -61,11 +60,11 @@ const Contact = () => {
         <div className="intro-welcome">
           <h2>PRICING</h2>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h6 class="pricing-title text-center">WEEKDAY</h6>
-              <div class="text-center pricing_r_align pricing_margin">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <h6 className="pricing-title text-center">WEEKDAY</h6>
+              <div className="text-center pricing_r_align pricing_margin">
 
 {/* future development code  */}
 

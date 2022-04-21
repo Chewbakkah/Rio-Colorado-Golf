@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Auth from "../../utils/auth"
+
 
 const NavLinks = (props) => {
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  }
   const animateFrom = { opacity: 0, y: -40 };
   const animateTo = { opacity: 1, y: 0 };
   return (
@@ -18,6 +24,17 @@ const NavLinks = (props) => {
           onClick={() => props.isMobile && props.closeMobileMenu()}
           className="active"
         >
+          <Link to="/">
+            <span className="header-text">HOME</span>
+          </Link>
+        </motion.li>
+        <motion.li
+          initial={animateFrom}
+          animate={animateTo}
+          transition={{ delay: 0.1 }}
+          onClick={() => props.isMobile && props.closeMobileMenu()}
+          className="active"
+        >
           <Link to="/course">
             <span className="header-text">COURSE</span>
           </Link>
@@ -25,7 +42,7 @@ const NavLinks = (props) => {
         <motion.li
           initial={animateFrom}
           animate={animateTo}
-          transition={{ delay: 0.1 }}
+          transition={{ delay: 0.2 }}
           onClick={() => props.isMobile && props.closeMobileMenu()}
           className="active"
         >
@@ -36,7 +53,7 @@ const NavLinks = (props) => {
         <motion.li
           initial={animateFrom}
           animate={animateTo}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.3 }}
           onClick={() => props.isMobile && props.closeMobileMenu()}
           className="active"
         >
@@ -47,7 +64,7 @@ const NavLinks = (props) => {
         <motion.li
           initial={animateFrom}
           animate={animateTo}
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.4 }}
           onClick={() => props.isMobile && props.closeMobileMenu()}
           className="active"
         >
@@ -58,13 +75,25 @@ const NavLinks = (props) => {
         <motion.li
           initial={animateFrom}
           animate={animateTo}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.5 }}
           onClick={() => props.isMobile && props.closeMobileMenu()}
           className="active"
         >
-          <Link to="/login">
-            <span className="header-text">LOGIN</span>
-          </Link>
+          {Auth.loggedIn() ? (
+            <>
+              <Link to="/profile">
+                <a href="/" onClick={logout}>
+                  <span className="header-text">LOGOUT</span>
+                </a>
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link to="/login">
+                <span className="header-text">LOGIN</span>
+              </Link>
+            </>
+          )}
         </motion.li>
       </ul>
     </div>

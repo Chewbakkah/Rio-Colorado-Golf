@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {
   ApolloClient,
@@ -19,24 +18,26 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Contact from "./pages/Contact";
 import Admin from "./pages/Admin";
+import NoMatch from "./pages/NoMatch"
 
 const httpLink = createHttpLink({
+  // uri: "/graphql", uncomment for live server and delete row below
   uri: "http://localhost:3001/graphql",
 });
 
-// const authLink = setContext((_, { headers }) => {
-//   const token = localStorage.getItem("id_token");
-//   return {
-//     headers: {
-//       ...headers,
-//       authorization: token ? `Bearer ${token}` : "",
-//     },
-//   };
-// });
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem("id_token");
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : "",
+    },
+  };
+});
 
 const client = new ApolloClient({
-  // link: authLink.concat(httpLink),
-  link: httpLink,
+  link: authLink.concat(httpLink),
+  // link: httpLink,
   cache: new InMemoryCache(),
 });
 
@@ -56,6 +57,8 @@ function App() {
               <Route exact path="/login" component={Login} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/admin" component={Admin} />
+
+              <Route component={NoMatch} />
             </Switch>
           </div>
           <Footer />
