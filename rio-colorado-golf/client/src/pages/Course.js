@@ -13,11 +13,11 @@ const Course = () => {
       <div className="course-header">
         <h2>THE COURSE</h2>
       </div>
-      <div class="w-100">
+      
         <div className="course-img">
             <img className="img-fluid w-100 img-shadow" src={courseImg} alt="course layout"/>
           </div>
-      </div>
+      
       <div className="flex course-container">
         
           <div className="course-text">
