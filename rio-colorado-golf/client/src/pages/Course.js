@@ -13,9 +13,12 @@ const Course = () => {
       <div className="course-header">
         <h2>THE COURSE</h2>
       </div>
+        <div className="course-img">
+            <img className="img-fluid w-100 img-shadow" src={courseImg} alt="course layout"/>
+          </div>
       <div className="flex course-container">
-        <div className="row">
-          <div className="col-xl-6 course-text">
+        
+          <div className="course-text">
             The front nine is a skillfully sculpted, prairie links design, with
             holes playing from every direction to ensure the Texas coastal winds
             will play a significant role in your game. Fairway and greenside
@@ -33,10 +36,8 @@ const Course = () => {
             and don't be suprised to spot plenty of wildlife including deer,
             ducks, rabbits, cranes, hawks and alligators.
           </div>
-          <div className="col-xl-6 course-img">
-            <img className="img-fluid w-100 img-shadow" src={courseImg} alt="course layout"/>
-          </div>
-        </div>
+          
+        
       </div>
 
       <section>
